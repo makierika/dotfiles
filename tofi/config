@@ -1,0 +1,17 @@
+anchor = top-left
+width = 25%
+height = 36
+margin-left = 400
+horizontal = true
+font-size = 12
+font = "Maple Mono NF"
+prompt-text = "  "
+outline-width = 0
+border-width = 0
+result-spacing = 35
+text-color = #f3eeed
+selection-color = #7593af
+selection-match-color = #abc4ff
+background-color = #273b3d00
+matching-algorithm = fuzzy
+drun-launch = true

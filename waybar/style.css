@@ -1,0 +1,64 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Maple Mono NF;
+}
+
+window#waybar {
+  background: rgba(39, 59, 61, 0.5);
+  border-bottom: 0;
+  color: #f3eeed;
+}
+
+#workspaces button {
+  font-size: 15px;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #f3eeed;
+}
+
+#workspaces button.focused {
+  background: #183e4b;
+  color: #abc4ff;
+}
+
+#workspaces button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  text-decoration: none;
+  color: #f3eeed;
+}
+
+#clock {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f3eeed;
+}
+
+#custom-icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f3eeed;
+}
+
+#custom-icon2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f3eeed;
+}
+
+#custom-wlogout {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f3eeed;
+}
+
+#cpu, #wireplumber {
+  font-size: 18px;
+  color: #f3eeed;
+}

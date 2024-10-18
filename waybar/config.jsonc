@@ -1,0 +1,61 @@
+{
+  "height": 36,
+  "spacing": 7,
+  "modules-left": [ "custom/holder", "sway/workspaces" ],
+  "modules-center": [ "clock" ],
+  "modules-right": [
+    "custom/icon",
+    "cpu",
+    "custom/icon2",
+    "wireplumber",
+    "custom/holder",
+    "custom/wlogout"
+  ],
+  "sway/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "1 ",
+      "2": "2 ",
+      "3": "3 ",
+      "4": "4 "
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    },
+    "sort-by-number": true
+  },
+  "clock": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{:%a %d.%b %R}"
+  },
+  "custom/icon": {
+    "tooltip": false,
+    "format": "󰍛"
+  },
+  "custom/icon2": {
+    "tooltip": false,
+    "format": ""
+  },
+  "custom/holder": {
+    "tooltip": false,
+    "format": " "
+  },
+  "custom/wlogout": {
+    "tooltip": false,
+    "on-click": "wlogout --buttons-per-row 4 -m 520",
+    "format": "  "
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "{usage}% "
+  },
+  "wireplumber": {
+    "tooltip": false,
+    "format": "{volume}%"
+  }
+}

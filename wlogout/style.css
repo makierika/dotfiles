@@ -1,0 +1,44 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+  font-family: "Maple Mono NF";
+  font-size: 16pt;
+  color: #cdd6f4;
+	background-color: rgba(17, 17, 27, 0.8);
+}
+
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  border: none;
+  color: #ced7f4;
+  text-shadow: none;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgba(30, 30, 46, 0);
+  margin: 30px;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(49, 50, 68, 0.3);
+}
+
+#lock {
+    background-image: image(url("./icons/lock.svg"));
+}
+
+#suspend {
+    background-image: image(url("./icons/moon.svg"));
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.svg"));
+}
+
+#reboot {
+    background-image: image(url("./icons/reboot.svg"));
+}
