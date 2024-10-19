@@ -1,0 +1,16 @@
+alist/data/log/
+alist/data/temp/
+btop/btop.log
+btop/themes/
+dconf/
+dinit.d/
+fcitx/
+fcitx5/conf/cached_layouts
+gtk-3.0/
+gtk-4.0/
+ibus/
+mpd/database
+mpd/log
+mpd/state
+mpd/playlists/
+procps/
