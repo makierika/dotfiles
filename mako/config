@@ -27,3 +27,5 @@ ignore-timeout=0
 max-visible=1
 layer=top
 anchor=top-right
+
+on-notify=exec mpv ~/.config/mako/sound.wav
