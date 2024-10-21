@@ -16,11 +16,11 @@ tcp-concurrent: true
 unified-delay: true
 global-client-fingerprint: chrome
 proxies:
-  - { name: v2free_0, server: fr1t-display.88888805.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
-  - { name: v2free_1, server: us1t-1002.88888805.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
-  - { name: v2free_2, server: us2t-videos.88888805.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
-  - { name: v2free_3, server: us3t-1001.88888805.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
-  - { name: v2free_4, server: us4t-1001.88888805.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_0, server: fr1t-1019.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_1, server: us1t-1002.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_2, server: us2t-oct19.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_3, server: us3t-1019.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_4, server: us4t-1001.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
   - name: cfvless
     type: vless
     server: thirdeye.kosaka-chatgpt.eu.org
@@ -74,7 +74,6 @@ rules:
   - DOMAIN-SUFFIX,v2ex.com,airport
   - DOMAIN-SUFFIX,clash.eula.club,airport
   - DOMAIN-SUFFIX,npdn.top,airport
-  - DOMAIN-SUFFIX,w1.v2free.top,airport
   - DOMAIN-SUFFIX,gitlab.com,airport
   - DOMAIN-SUFFIX,wikimedia.org,airport
   - DOMAIN-SUFFIX,sourceforge.net,airport
