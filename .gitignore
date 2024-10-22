@@ -11,6 +11,7 @@ gtk-4.0/
 ibus/
 mpd/database
 mpd/log
+mpd/pid
 mpd/state
 mpd/playlists/
 procps/
