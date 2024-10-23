@@ -13,6 +13,5 @@ text-color = #f3eeed
 selection-color = #7593af
 selection-match-color = #abc4ff
 background-color = #273b3d00
-matching-algorithm = fuzzy
 drun-launch = true
 hint-font = false

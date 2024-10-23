@@ -1,8 +1,8 @@
-exec mako
-exec wireplumber
-exec foot --server
-exec waybar
-exec fcitx5 -d -r
+exec --no-startup-id mako
+exec --no-startup-id wireplumber
+exec --no-startup-id foot --server
+exec --no-startup-id waybar
+exec --no-startup-id fcitx5 -d -r
 
 set $super Mod4
 
