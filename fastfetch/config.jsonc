@@ -12,16 +12,13 @@
     "display",
     "wm",
     "theme",
-    "font",
     "terminal",
-    "terminalfont",
     "cpu",
     "gpu",
     "memory",
     "swap",
     "disk",
     "localip",
-    "poweradapter",
     "locale"
   ]
 }

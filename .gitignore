@@ -1,3 +1,5 @@
+alist/data/data.db-shm
+alist/data/data.db-wal
 alist/data/log/
 alist/data/temp/
 btop/btop.log
