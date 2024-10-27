@@ -12,6 +12,7 @@ bindsym $super+Space exec tofi-drun
 bindsym $super+x kill
 bindsym $super+Shift+r reload
 bindsym $super+Shift+e exec swaymsg exit
+bindsym Print exec shot
 
 bindsym $super+t split toggle
 bindsym $super+f floating toggle
