@@ -1,0 +1,3 @@
+timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
+timeout 900 'loginctl lock-session & hyprlock'
+timeout 1800 'loginctl suspend'
