@@ -16,4 +16,6 @@ mpd/log
 mpd/pid
 mpd/state
 mpd/playlists/
+nwg-look/
 procps/
+xsettingsd/
