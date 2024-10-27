@@ -39,7 +39,7 @@ output DP-1 {
 input "type:keyboard" {
   xkb_options caps:escape
 }
-seat seat0 xcursor_theme Bibata-Original-Ice 24
+seat seat0 xcursor_theme Bibata-Original-Classic 24
 default_border none
 gaps outer 8
 gaps inner 5
