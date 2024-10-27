@@ -1,7 +1,7 @@
 max-history=3
 sort=-time
 
-font='Maple Mono NF' 13
+font=monospace 13
 text-color=#d6e6ff
 width=300
 height=200
