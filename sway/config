@@ -33,7 +33,7 @@ bindsym $super+Shift+4 move container to workspace number 4
 floating_modifier $super normal
 
 output DP-1 {
-  bg ~/Pictures/pexels-kadirakman-16116941.jpg fill
+  bg ~/Pictures/pexels-justin-hamilton-205416.jpg fill
   mode 2560x1440@74.999Hz
 }
 input "type:keyboard" {
