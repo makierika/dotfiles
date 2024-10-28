@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "loginctl lock-session & hyprlock",
+    "action" : "loginctl lock-session && hyprlock",
     "text" : "锁定"
 }
 {
@@ -10,7 +10,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "loginctl suspend & hyprlock",
+    "action" : "loginctl suspend && hyprlock",
     "text" : "睡眠"
 }
 {
