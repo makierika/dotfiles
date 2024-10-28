@@ -37,6 +37,7 @@ floating_modifier $super normal
 output DP-1 {
   bg ~/Pictures/pexels-justin-hamilton-205416.jpg fill
   mode 2560x1440@74.999Hz
+  render_bit_depth 10
 }
 input "type:keyboard" {
   xkb_options caps:escape
