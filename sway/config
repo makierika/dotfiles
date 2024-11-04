@@ -39,6 +39,8 @@ output DP-1 {
   render_bit_depth 10
 }
 input "type:keyboard" {
+  xkb_layout us
+  #xkb_variant norman
   xkb_options caps:escape
 }
 seat seat0 xcursor_theme Bibata-Original-Classic 24

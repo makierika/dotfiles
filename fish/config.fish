@@ -10,6 +10,7 @@ alias ff=fastfetch
 alias ls="eza --icons=always"
 alias tree="ls --tree"
 alias httpd="python -m http.server 80"
+alias syncthing="syncthing serve --no-upgrade"
 alias v=nvim
 
 function y
