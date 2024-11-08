@@ -64,6 +64,7 @@ rules:
   - DOMAIN-SUFFIX,openai.com,limitless
   - DOMAIN-SUFFIX,chatgpt.com,limitless
   - DOMAIN-SUFFIX,cloudflare.com,limitless
+  - DOMAIN-SUFFIX,startpage.com,limitless
   - DOMAIN-SUFFIX,medium.com,airport
   - DOMAIN-SUFFIX,quora.com,airport
   - DOMAIN-SUFFIX,quoracdn.net,airport
