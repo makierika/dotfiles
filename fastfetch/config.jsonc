@@ -9,8 +9,8 @@
   "logo": {
     "source": "~/.config/fastfetch/logo.txt",
     "padding": {
-      "top": 3,
-      "right": 5
+      "top": 0,
+      "right": 3
     }
   },
   "display": {
@@ -18,12 +18,6 @@
   },
   "modules": [
 	  "break",
-	  "break",
-	  {
-      "type": "title",
-      "keyWidth": 10
-    },
-    "break",
     {
       "type": "os",
       "key": " ",
