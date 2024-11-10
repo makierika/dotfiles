@@ -16,10 +16,10 @@ tcp-concurrent: true
 unified-delay: true
 global-client-fingerprint: chrome
 proxies:
-  - { name: v2free_0, server: fr1t-1022.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
-  - { name: v2free_1, server: us1t-1022.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_0, server: fr1t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /frgogofa, headers: { Host: fr1t.88888008.xyz }, v2ray-http-upgrade: true } }
+  - { name: v2free_1, server: us1t-1031.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us1t-1031.88888008.xyz }, v2ray-http-upgrade: true } }
   - { name: v2free_2, server: us2t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us2t.88888008.xyz }, v2ray-http-upgrade: true } }
-  - { name: v2free_3, server: us3t-1024.88888009.xyz, port: 443, type: trojan, password: ae3ee41e-e274-3252-88f2-3bc434b830cf, udp: true, network: ws, ws-opts: { path: /3690dc09-26c3-57ab-b9cf-836523956698 } }
+  - { name: v2free_3, server: us3t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us3t.88888008.xyz }, v2ray-http-upgrade: true } }
   - { name: v2free_4, server: us4t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us4t.88888008.xyz }, v2ray-http-upgrade: true } }
   - name: cfvless
     type: vless
@@ -39,7 +39,7 @@ proxy-groups:
   - name: "airport"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
-    interval: 300
+    interval: 200
     proxies:
       - v2free_0
       - v2free_1
@@ -81,5 +81,4 @@ rules:
   - DOMAIN-SUFFIX,cdn-zlib.se,airport
   - DOMAIN-SUFFIX,sagernet.org,airport
   - DOMAIN-SUFFIX,mpv.io,airport
-  - DOMAIN-SUFFIX,oaistatic.com,airport
   - MATCH,cloudflare
