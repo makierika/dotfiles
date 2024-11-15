@@ -5,13 +5,14 @@ bind \cy accept-autosuggestion execute
 bind \cj history-prefix-search-forward
 bind \ck history-prefix-search-backward
 
+alias v=nvim
 alias c=clear
 alias ff=fastfetch
 alias ls="eza --icons=always"
 alias tree="ls --tree"
 alias httpd="python -m http.server 80"
 alias syncthing="syncthing serve --no-upgrade"
-alias v=nvim
+alias qr="qrencode -t ansi"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
