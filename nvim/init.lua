@@ -51,7 +51,7 @@ local plugins = {
       local alpha = require'alpha'
       local dashboard = require'alpha.themes.dashboard'
       dashboard.section.buttons.val = {
-        dashboard.button("e", "  New file" , ":ene <BAR> startinsert <CR>"),
+        dashboard.button("󱁐e", "  New file" , ":ene <BAR> startinsert <CR>"),
         dashboard.button("󱁐ff", "󰈞  Find file"),
         dashboard.button("󱁐fi", "󰅳  Find input"),
         dashboard.button("󱁐fc", "󰈬  Find cursor"),
