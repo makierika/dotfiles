@@ -54,8 +54,8 @@ local plugins = {
         dashboard.button( "e", "  New file" , ":ene <BAR> startinsert <CR>"),
         dashboard.button("󱁐 ff", "󰈞  Find file"),
         dashboard.button("󱁐 fs", "󰅳  Find string"),
-        dashboard.button("󱁐 fw", "󰈬  Find word"),
-        dashboard.button( "q", "󰅚  Quit NVIM" , ":qa<CR>"),
+        dashboard.button("󱁐 fc", "󰈬  Find cursor"),
+        dashboard.button( "q", "󰅚  Quit nvim" , ":qa<CR>"),
       }
       alpha.setup(dashboard.config)
     end
@@ -96,8 +96,8 @@ local plugins = {
       pcall(require('telescope').load_extension, 'ui-select')
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>ff', builtin.find_files)
-      vim.keymap.set('n', '<leader>fw', builtin.live_grep)
-      vim.keymap.set('n', '<leader>fg', builtin.grep_string)
+      vim.keymap.set('n', '<leader>fs', builtin.live_grep)
+      vim.keymap.set('n', '<leader>fc', builtin.grep_string)
     end,
   }
 }
