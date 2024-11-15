@@ -1,0 +1,9 @@
+gui:
+  nerdFontsVersion: "3"
+  showRandomTip: false
+  showBottomLine: false
+  border: single
+  theme:
+    activeBorderColor:
+      - "#476f95"
+      - bold
