@@ -20,3 +20,4 @@ nwg-look/
 procps/
 xsettingsd/
 QtProject.conf
+nvim/lazy-lock.json
