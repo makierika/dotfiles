@@ -51,11 +51,11 @@ local plugins = {
       local alpha = require'alpha'
       local dashboard = require'alpha.themes.dashboard'
       dashboard.section.buttons.val = {
-        dashboard.button( "e", "  New file" , ":ene <BAR> startinsert <CR>"),
-        dashboard.button("󱁐 ff", "󰈞  Find file"),
-        dashboard.button("󱁐 fs", "󰅳  Find string"),
-        dashboard.button("󱁐 fc", "󰈬  Find cursor"),
-        dashboard.button( "q", "󰅚  Quit nvim" , ":qa<CR>"),
+        dashboard.button("e", "  New file" , ":ene <BAR> startinsert <CR>"),
+        dashboard.button("󱁐ff", "󰈞  Find file"),
+        dashboard.button("󱁐fi", "󰅳  Find input"),
+        dashboard.button("󱁐fc", "󰈬  Find cursor"),
+        dashboard.button("󱁐q", "󰅚  Quit nvim"),
       }
       alpha.setup(dashboard.config)
     end
@@ -96,7 +96,7 @@ local plugins = {
       pcall(require('telescope').load_extension, 'ui-select')
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>ff', builtin.find_files)
-      vim.keymap.set('n', '<leader>fs', builtin.live_grep)
+      vim.keymap.set('n', '<leader>fi', builtin.live_grep)
       vim.keymap.set('n', '<leader>fc', builtin.grep_string)
     end,
   }
