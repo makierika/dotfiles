@@ -1,0 +1,1 @@
+root=/dev/sda4 initrd=\EFI\linux\initramfs.img quiet libata.noacpi=1 i915.enable_psr=0
