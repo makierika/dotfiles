@@ -8,6 +8,7 @@ bind \ck history-prefix-search-backward
 alias v=nvim
 alias c=clear
 alias ff=fastfetch
+alias lg=lazygit
 alias ls="eza --icons=always"
 alias tree="ls --tree"
 alias httpd="python -m http.server 80"
