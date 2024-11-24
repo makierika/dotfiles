@@ -1,0 +1,9 @@
+[updates]
+auto_update = false
+[style.description]
+foreground = { rgb = { r = 116, g = 168, b = 146 } }
+[style.example_text]
+italic = true
+foreground = { rgb = { r = 239, g = 124, b = 142 } }
+[style.command_name]
+foreground = "magenta"
