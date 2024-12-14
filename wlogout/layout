@@ -1,20 +1,20 @@
 {
     "label" : "lock",
-    "action" : "loginctl lock-session && hyprlock",
+    "action" : "hyprlock",
     "text" : "锁定"
 }
 {
     "label" : "shutdown",
-    "action" : "loginctl poweroff",
+    "action" : "doas poweroff",
     "text" : "关机"
 }
 {
     "label" : "suspend",
-    "action" : "loginctl suspend && hyprlock",
+    "action" : "doas zzz && hyprlock",
     "text" : "睡眠"
 }
 {
     "label" : "reboot",
-    "action" : "loginctl reboot",
+    "action" : "doas reboot",
     "text" : "重启"
 }
