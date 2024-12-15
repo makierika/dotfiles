@@ -4,6 +4,7 @@ $hostname\
 $directory\
 $git_branch\
 $git_state\
+$git_commit\
 $git_status\
 $cmd_duration\
 $line_break\
@@ -11,19 +12,29 @@ $character"""
 
 add_newline = false
 
+[username]
+format = '[$user]($style) in '
+style_user = '#a3b7ca bold'
+style_root = 'red bold'
+show_always = true
+
 [directory]
 style = "#E7DDFF"
 truncation_length = 3
 use_os_path_sep = false
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
+success_symbol = "[➜](purple)"
+error_symbol = "[➜](red)"
 vimcmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "[$branch]($style)"
 style = "bright-black"
+
+[git_commit]
+commit_hash_length = 6
+style = 'bold #809bce'
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
@@ -34,7 +45,7 @@ modified = "​"
 staged = "​"
 renamed = "​"
 deleted = "​"
-stashed = "≡"
+stashed = "≡ "
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
