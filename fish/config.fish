@@ -12,7 +12,7 @@ alias lg=lazygit
 alias ls="eza --icons=always"
 alias tree="ls --tree"
 alias httpd="python -m http.server 80"
-alias syncthing="syncthing serve --no-upgrade"
+alias syncthing="syncthing serve --no-upgrade --no-browser"
 alias qr="qrencode -t ansi"
 
 function y
@@ -26,3 +26,4 @@ end
 
 eval "$(zoxide init fish)"
 eval "$(fzf --fish)"
+eval "$(starship init fish)"
