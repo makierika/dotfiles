@@ -11,7 +11,7 @@ now_playing_suffix = "$b$9"
 main_window_color = white
 
 playlist_display_mode = "classic"
-user_interface = classic
+user_interface = "alternative"
 header_visibility = "no"
 statusbar_visibility = "no"
 titles_visibility = "no"
