@@ -14,7 +14,7 @@ add_newline = false
 
 [username]
 format = '[$user]($style) in '
-style_user = '#a3b7ca bold'
+style_user = '#598f91 bold'
 style_root = 'red bold'
 show_always = true
 

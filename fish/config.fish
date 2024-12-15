@@ -14,6 +14,8 @@ alias tree="ls --tree"
 alias httpd="python -m http.server 80"
 alias syncthing="syncthing serve --no-upgrade --no-browser"
 alias qr="qrencode -t ansi"
+alias mpd="mpd >/dev/null 2>&1"
+alias ncmpcpp="ncmpcpp -q"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
