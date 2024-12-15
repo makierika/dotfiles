@@ -58,7 +58,6 @@ rules:
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
-  - DOMAIN-KEYWORD,googleapi,REJECT
   - DOMAIN-KEYWORD,ogads,REJECT
   - DOMAIN-KEYWORD,pagead,REJECT
   - DOMAIN-SUFFIX,openai.com,limitless
