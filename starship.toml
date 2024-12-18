@@ -13,7 +13,7 @@ $character"""
 add_newline = false
 
 [username]
-format = '[$user]($style) in '
+format = '[$user]($style)  '
 style_user = '#598f91 bold'
 style_root = 'red bold'
 show_always = true
@@ -30,7 +30,7 @@ vimcmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "#f38c51"
+style = "#45496a bold"
 
 [git_commit]
 commit_hash_length = 6
