@@ -80,4 +80,5 @@ rules:
   - DOMAIN-SUFFIX,cdn-zlib.se,airport
   - DOMAIN-SUFFIX,sagernet.org,airport
   - DOMAIN-SUFFIX,mpv.io,airport
+  - DOMAIN-SUFFIX,fcdn.sk,airport
   - MATCH,cloudflare
