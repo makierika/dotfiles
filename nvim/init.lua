@@ -99,6 +99,14 @@ local plugins = {
       vim.keymap.set('n', '<leader>fi', builtin.live_grep)
       vim.keymap.set('n', '<leader>fc', builtin.grep_string)
     end,
+  },
+  {
+    'kdheepak/lazygit.nvim',
+    lazy = true,
+    cmd = { 'LazyGit' },
+    keys = {
+      { '<leader>lg', '<cmd>LazyGit<cr>' }
+    }
   }
 }
 local opts = {}
