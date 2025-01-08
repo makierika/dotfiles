@@ -49,10 +49,6 @@ proxy-groups:
     type: select
     proxies:
       - cfvless
-  - name: "limitless"
-    type: select
-    proxies:
-      - v2free_4
 rules:
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -60,10 +56,10 @@ rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - DOMAIN-KEYWORD,ogads,REJECT
   - DOMAIN-KEYWORD,pagead,REJECT
-  - DOMAIN-SUFFIX,openai.com,limitless
-  - DOMAIN-SUFFIX,chatgpt.com,limitless
-  - DOMAIN-SUFFIX,oaistatic.com,limitless
-  - DOMAIN-SUFFIX,cloudflare.com,limitless
+  - DOMAIN-SUFFIX,openai.com,airport
+  - DOMAIN-SUFFIX,chatgpt.com,airport
+  - DOMAIN-SUFFIX,oaistatic.com,airport
+  - DOMAIN-SUFFIX,cloudflare.com,airport
   - DOMAIN-SUFFIX,medium.com,airport
   - DOMAIN-SUFFIX,quora.com,airport
   - DOMAIN-SUFFIX,quoracdn.net,airport
