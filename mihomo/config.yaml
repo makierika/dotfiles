@@ -1,5 +1,5 @@
 log-level: silent
-mixed-port: 7892
+socks-port: 7892
 ipv6: false
 allow-lan: false
 geodata-mode: false
@@ -13,14 +13,23 @@ profile:
   store-selected: true
 mode: rule
 tcp-concurrent: true
-unified-delay: true
+unified-delay: false
 global-client-fingerprint: chrome
 proxies:
-  - { name: v2free_0, server: fr1t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /frgogofa, headers: { Host: fr1t.88888008.xyz }, v2ray-http-upgrade: true } }
-  - { name: v2free_1, server: us1t-1031.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us1t-1031.88888008.xyz }, v2ray-http-upgrade: true } }
-  - { name: v2free_2, server: us2t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us2t.88888008.xyz }, v2ray-http-upgrade: true } }
-  - { name: v2free_3, server: us3t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us3t.88888008.xyz }, v2ray-http-upgrade: true } }
-  - { name: v2free_4, server: us4t.88888008.xyz, port: 80, type: vmess, uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: { path: /microsoft, headers: { Host: us4t.88888008.xyz }, v2ray-http-upgrade: true } }
+  - name: v2free
+    type: vmess
+    server: fr1t.88888008.xyz
+    port: 80
+    uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf
+    network: ws
+    tls: false
+    alterId: 0
+    cipher: auto
+    ws-opts:
+      path: '/frgogofa'
+      v2ray-http-upgrade: true
+      headers:
+        host: fr1t.88888008.xyz
   - name: cfvless
     type: vless
     server: thirdeye.kosaka-chatgpt.eu.org
@@ -32,23 +41,18 @@ proxies:
     sni: thirdeye.kosaka-chatgpt.eu.org
     client-fingerprint: chrome
     ws-opts:
-      path: "/?ed=2048"
+      path: '/?ed=2048'
       headers:
         host: thirdeye.kosaka-chatgpt.eu.org
 proxy-groups:
-  - name: "airport"
-    type: url-test
-    url: "http://www.gstatic.com/generate_204"
-    interval: 200
-    proxies:
-      - v2free_0
-      - v2free_1
-      - v2free_2
-      - v2free_3
-  - name: "cloudflare"
+  - name: cloudflare
     type: select
     proxies:
       - cfvless
+  - name: airport
+    type: select
+    proxies:
+      - v2free
 rules:
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -73,7 +77,6 @@ rules:
   - DOMAIN-SUFFIX,gitlab.com,airport
   - DOMAIN-SUFFIX,wikimedia.org,airport
   - DOMAIN-SUFFIX,sourceforge.net,airport
-  - DOMAIN-SUFFIX,cdn-zlib.se,airport
   - DOMAIN-SUFFIX,sagernet.org,airport
   - DOMAIN-SUFFIX,mpv.io,airport
   - DOMAIN-SUFFIX,fcdn.sk,airport
