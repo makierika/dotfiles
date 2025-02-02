@@ -75,6 +75,7 @@ rules:
   - DOMAIN-SUFFIX,clash.eula.club,airport
   - DOMAIN-SUFFIX,npdn.top,airport
   - DOMAIN-SUFFIX,gitlab.com,airport
+  - DOMAIN-SUFFIX,wikipedia.org,airport
   - DOMAIN-SUFFIX,wikimedia.org,airport
   - DOMAIN-SUFFIX,sourceforge.net,airport
   - DOMAIN-SUFFIX,sagernet.org,airport
