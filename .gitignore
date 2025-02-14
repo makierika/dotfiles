@@ -22,3 +22,5 @@ xsettingsd/
 QtProject.conf
 nvim/lazy-lock.json
 tmux/plugins
+Kitware/
+mimeapps.list
