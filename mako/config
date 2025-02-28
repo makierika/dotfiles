@@ -29,3 +29,7 @@ layer=top
 anchor=top-right
 
 on-notify=exec mpv ~/.config/mako/sound.wav
+
+[app-name=Rime]
+invisible=1
+on-notify=none
