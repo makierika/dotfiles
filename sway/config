@@ -33,9 +33,10 @@ bindsym $super+Shift+4 move container to workspace number 4
 
 floating_modifier $super normal
 
+xwayland disable
 output DP-1 {
   bg ~/Pictures/pexels-evie-shaffer-1259279-4004374.jpg fill
-  mode 2560x1440@74.999Hz
+  mode 2560x1440@60Hz
   #render_bit_depth 10
 }
 input "type:keyboard" {
