@@ -18,7 +18,7 @@ global-client-fingerprint: chrome
 proxies:
   - name: v2free
     type: vmess
-    server: fr1t.88888008.xyz
+    server: fr2t.88888008.xyz
     port: 80
     uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf
     network: ws
@@ -26,10 +26,10 @@ proxies:
     alterId: 0
     cipher: auto
     ws-opts:
-      path: '/frgogofa'
+      path: '/fr2tgogofa'
       v2ray-http-upgrade: true
       headers:
-        host: fr1t.88888008.xyz
+        host: fr2t.88888008.xyz
   - name: cfvless
     type: vless
     server: thirdeye.kosaka-chatgpt.eu.org
@@ -63,7 +63,6 @@ rules:
   - DOMAIN-SUFFIX,openai.com,airport
   - DOMAIN-SUFFIX,chatgpt.com,airport
   - DOMAIN-SUFFIX,oaistatic.com,airport
-  - DOMAIN-SUFFIX,cloudflare.com,airport
   - DOMAIN-SUFFIX,medium.com,airport
   - DOMAIN-SUFFIX,quora.com,airport
   - DOMAIN-SUFFIX,quoracdn.net,airport
