@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "hyprlock -q",
     "text" : "锁定"
 }
 {
@@ -10,7 +10,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "doas zzz && hyprlock",
+    "action" : "doas zzz && hyprlock -q",
     "text" : "睡眠"
 }
 {
