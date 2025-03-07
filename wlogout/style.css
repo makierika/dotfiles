@@ -9,6 +9,7 @@ window {
   color: #cdd6f4;
 	/*background-color: rgba(17, 17, 27, 0.8);*/
   background-image: image(url("./icons/background.jpg"));
+  background-size: cover;
 }
 
 button {
