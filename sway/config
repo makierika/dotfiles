@@ -36,7 +36,7 @@ bindsym $super+Shift+4 move container to workspace number 4
 
 floating_modifier $super normal
 
-xwayland disable
+xwayland enable
 output DP-1 {
   bg ~/Pictures/wallpapercave-berserk-0001.jpg fill
   mode 2560x1440@60Hz
