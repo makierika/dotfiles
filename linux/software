@@ -4,6 +4,7 @@ rust
 llvm
 elogind
 dbus
+dracut
 intel-microcode
 polkit-gnome
 efibootmgr
@@ -63,6 +64,7 @@ rsync
 xdg-desktop-portal-wlr
 obs
 android-tools
+scrcpy
 age
 termshark
 timeshift
