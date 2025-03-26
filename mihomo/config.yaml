@@ -67,6 +67,7 @@ rules:
   - DOMAIN-SUFFIX,quora.com,airport
   - DOMAIN-SUFFIX,quoracdn.net,airport
   - DOMAIN-SUFFIX,androidcombo.com,airport
+  - DOMAIN-SUFFIX,apkcombo.com,airport
   - DOMAIN-SUFFIX,apkflash.net,airport
   - DOMAIN-SUFFIX,anthropic.com,airport
   - DOMAIN-SUFFIX,flowoss.com,airport
