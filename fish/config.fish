@@ -17,6 +17,7 @@ alias qr="qrencode -t ansi"
 alias mpd="mpd >/dev/null 2>&1"
 alias ncmpcpp="ncmpcpp -q"
 alias mpvg="mpv -vo=gpu-next"
+alias mp3="mpv --no-video"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")

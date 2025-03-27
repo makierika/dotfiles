@@ -5,7 +5,7 @@
 }
 {
     "label" : "shutdown",
-    "action" : "rsync -au --delete /home/kosaka/.librewolf/ /home/kosaka/librewolf/ && doas poweroff",
+    "action" : "doas poweroff",
     "text" : "关机"
 }
 {
