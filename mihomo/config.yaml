@@ -7,6 +7,8 @@ tun:
   enable: false
 sniffer:
   enable: false
+hosts:
+  'thirdeye.kosaka-chatgpt.eu.org': 104.19.166.174
 dns:
   enable: true
   respect-rules: false
