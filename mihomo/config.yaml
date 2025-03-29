@@ -10,7 +10,6 @@ sniffer:
 dns:
   enable: true
   respect-rules: false
-  listen: 0.0.0.0:1053
   ipv6: false
   default-nameserver:
     - 192.168.2.1
@@ -90,7 +89,6 @@ rules:
   - DOMAIN-SUFFIX,sagernet.org,airport
   - DOMAIN-SUFFIX,mpv.io,airport
   - DOMAIN-SUFFIX,fcdn.sk,airport
-  - DOMAIN-SUFFIX,hyprland.org,airport
   - DOMAIN-SUFFIX,x.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
   - MATCH,cloudflare
