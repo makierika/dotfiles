@@ -8,7 +8,16 @@ tun:
 sniffer:
   enable: false
 dns:
-  enable: false
+  enable: true
+  respect-rules: false
+  listen: 0.0.0.0:1053
+  ipv6: false
+  default-nameserver:
+    - 192.168.2.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  direct-nameserver:
+    - 192.168.2.1
 profile:
   store-selected: true
 mode: rule
@@ -83,4 +92,5 @@ rules:
   - DOMAIN-SUFFIX,fcdn.sk,airport
   - DOMAIN-SUFFIX,hyprland.org,airport
   - DOMAIN-SUFFIX,x.com,airport
+  - DOMAIN-SUFFIX,1lib.sk,airport
   - MATCH,cloudflare
