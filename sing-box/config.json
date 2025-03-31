@@ -15,8 +15,9 @@
       },
       {
         "tag": "cf-dns",
-        "type": "tcp",
-        "server": "1.1.1.1"
+        "type": "tls",
+        "server": "1.1.1.1",
+        "server_port": 853
       }
     ],
     "rules": [
@@ -26,7 +27,7 @@
           "fr2t.88888008"
         ],
         "action": "route",
-        "server": "hosts"
+        "server": "hosts" 
       }
     ],
     "final": "cf-dns",
@@ -36,9 +37,10 @@
   },
   "inbounds": [
     {
-      "type": "http",
-      "listen": "127.0.0.1",
-      "listen_port": 7899
+      "type": "tun",
+      "address": "198.18.0.1/16",
+      "auto_route": true,
+      "sniff": true
     }
   ],
   "outbounds": [
@@ -48,7 +50,6 @@
       "server": "thirdeye.kosaka-chatgpt.eu.org",
       "server_port": 443,
       "uuid": "17ecefc4-d24c-4192-b6e4-f8335ee03c8b",
-      "network": "tcp",
       "tls": {
         "enabled": true,
         "server_name": "thirdeye.kosaka-chatgpt.eu.org",
@@ -73,7 +74,6 @@
       "uuid": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
       "security": "auto",
       "alter_id": 0,
-      "network": "tcp",
       "tls": {
         "enabled": false
       },
@@ -93,10 +93,9 @@
         "action": "hijack-dns"
       },
       {
-        "domain": [
+        "domain_keyword": [
           "x.com",
-          "openai.com",
-          "chatgpt.com"
+          "twitter"
         ],
         "action": "route",
         "outbound": "v2free"
