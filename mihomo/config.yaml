@@ -8,9 +8,10 @@ tun:
 sniffer:
   enable: false
 hosts:
-  'thirdeye.kosaka-chatgpt.eu.org': 104.19.166.174
+  'thirdeye.kosaka-chatgpt.eu.org': 162.159.143.37
 dns:
   enable: true
+  cache-algorithm: arc
   respect-rules: false
   ipv6: false
   default-nameserver:
@@ -93,4 +94,5 @@ rules:
   - DOMAIN-SUFFIX,fcdn.sk,airport
   - DOMAIN-SUFFIX,x.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
+  - DOMAIN-SUFFIX,gstatic.com,airport
   - MATCH,cloudflare

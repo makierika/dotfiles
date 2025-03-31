@@ -1,0 +1,124 @@
+{
+  "log": { 
+    "disabled": false,
+    "level": "warn"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "hosts",
+        "type": "hosts",
+        "predefined": {
+          "thirdeye.kosaka-chatgpt.eu.org": "162.159.143.37",
+          "fr2t.88888008.xyz": "172.67.140.218"
+        }
+      },
+      {
+        "tag": "cf-dns",
+        "type": "tcp",
+        "server": "1.1.1.1"
+      }
+    ],
+    "rules": [
+      {
+        "domain_keyword": [
+          "kosaka-chatgpt",
+          "fr2t.88888008"
+        ],
+        "action": "route",
+        "server": "hosts"
+      }
+    ],
+    "final": "cf-dns",
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false
+  },
+  "inbounds": [
+    {
+      "type": "http",
+      "listen": "127.0.0.1",
+      "listen_port": 7899
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "cf",
+      "type": "vless",
+      "server": "thirdeye.kosaka-chatgpt.eu.org",
+      "server_port": 443,
+      "uuid": "17ecefc4-d24c-4192-b6e4-f8335ee03c8b",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "thirdeye.kosaka-chatgpt.eu.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "host": "thirdeye.kosaka-chatgpt.eu.org"
+        }
+      }
+    },
+    {
+      "tag": "v2free",
+      "type": "vmess",
+      "server": "fr2t.88888008.xyz",
+      "server_port": 80,
+      "uuid": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
+      "security": "auto",
+      "alter_id": 0,
+      "network": "tcp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/fr2tgogofa",
+        "headers": {
+          "host": "fr2t.88888008.xyz"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "domain": [
+          "x.com",
+          "openai.com",
+          "chatgpt.com"
+        ],
+        "action": "route",
+        "outbound": "v2free"
+      },
+      {
+        "domain_keyword": [
+          "ogads",
+          "pagead"
+        ],
+        "action": "reject"
+      }
+    ],
+    "final": "cf",
+    "default_domain_resolver": "hosts",
+    "auto_detect_interface": true
+  },
+  "ntp": {
+    "enabled": false
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
+  }
+}
