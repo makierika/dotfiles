@@ -93,9 +93,9 @@
         "action": "hijack-dns"
       },
       {
-        "domain_keyword": [
+        "domain": [
           "x.com",
-          "twitter"
+          "twitter.com"
         ],
         "action": "route",
         "outbound": "v2free"
