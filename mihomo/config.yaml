@@ -15,7 +15,7 @@ dns:
   respect-rules: false
   ipv6: false
   default-nameserver:
-    - 192.168.2.1
+    - tls://1.1.1.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   direct-nameserver:
@@ -94,5 +94,4 @@ rules:
   - DOMAIN-SUFFIX,fcdn.sk,airport
   - DOMAIN-SUFFIX,x.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
-  - DOMAIN-SUFFIX,gstatic.com,airport
   - MATCH,cloudflare
