@@ -24,7 +24,7 @@
       {
         "domain_keyword": [
           "kosaka-chatgpt",
-          "fr2t.88888008"
+          "fr2t"
         ],
         "action": "route",
         "server": "hosts" 
@@ -94,8 +94,10 @@
       },
       {
         "domain": [
-          "x.com",
-          "twitter.com"
+          "x.com"
+        ],
+        "domain_keyword": [
+          "twitter"
         ],
         "action": "route",
         "outbound": "v2free"
