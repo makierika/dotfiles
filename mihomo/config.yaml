@@ -76,13 +76,9 @@ rules:
   - DOMAIN-SUFFIX,medium.com,airport
   - DOMAIN-SUFFIX,quora.com,airport
   - DOMAIN-SUFFIX,quoracdn.net,airport
-  - DOMAIN-SUFFIX,androidcombo.com,airport
-  - DOMAIN-SUFFIX,apkcombo.com,airport
-  - DOMAIN-SUFFIX,apkflash.net,airport
   - DOMAIN-SUFFIX,anthropic.com,airport
   - DOMAIN-SUFFIX,flowoss.com,airport
   - DOMAIN-SUFFIX,v2ex.com,airport
-  - DOMAIN-SUFFIX,clash.eula.club,airport
   - DOMAIN-SUFFIX,npdn.top,airport
   - DOMAIN-SUFFIX,gitlab.com,airport
   - DOMAIN-SUFFIX,wikipedia.org,airport
@@ -93,4 +89,5 @@ rules:
   - DOMAIN-SUFFIX,fcdn.sk,airport
   - DOMAIN-SUFFIX,x.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
+  - DOMAIN-SUFFIX,apkpure.com,airport
   - MATCH,cloudflare
