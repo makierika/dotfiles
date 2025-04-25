@@ -16,9 +16,9 @@ alias syncthing="syncthing serve --no-upgrade --no-browser"
 alias qr="qrencode -t ansi"
 alias mpd="mpd >/dev/null 2>&1"
 alias ncmpcpp="ncmpcpp -q"
-alias mpvg="mpv -vo=gpu-next"
 alias mp3="mpv --no-video"
 alias tbw3="tbw 3"
+alias tldr="tldr -q"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")

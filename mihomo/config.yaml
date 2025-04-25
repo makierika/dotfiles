@@ -90,4 +90,5 @@ rules:
   - DOMAIN-SUFFIX,x.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
   - DOMAIN-SUFFIX,apkpure.com,airport
+  - DOMAIN-SUFFIX,googlapisapi.com,airport
   - MATCH,cloudflare
