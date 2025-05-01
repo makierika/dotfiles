@@ -1,1 +1,1 @@
-root=/dev/sda4 initrd=\EFI\linux\initramfs.img quiet libata.noacpi=1 i915.enable_psr=0 i915.enable_dc=0 i915.enable_guc=2 intel_pstate=passive
+root=/dev/sda4 initrd=\EFI\linux\initramfs.img quiet fastboot delayacct libata.noacpi=1 intel_pstate=passive amdgpu.dc=1
