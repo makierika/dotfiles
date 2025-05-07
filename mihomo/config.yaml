@@ -1,5 +1,5 @@
 log-level: silent
-port: 7892
+socks-port: 7892
 ipv6: false
 allow-lan: false
 geodata-mode: false
@@ -90,7 +90,6 @@ rules:
   - DOMAIN-SUFFIX,x.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
   - DOMAIN-SUFFIX,apkpure.com,airport
-  - DOMAIN-SUFFIX,googlapisapi.com,airport
   - DOMAIN-SUFFIX,ncdn.ec,airport
   - DOMAIN-SUFFIX,cloudflare.com,airport
   - MATCH,cloudflare
