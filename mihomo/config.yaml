@@ -92,4 +92,5 @@ rules:
   - DOMAIN-SUFFIX,apkpure.com,airport
   - DOMAIN-SUFFIX,ncdn.ec,airport
   - DOMAIN-SUFFIX,cloudflare.com,airport
+  - DOMAIN-SUFFIX,leijing.xyz,airport
   - MATCH,cloudflare

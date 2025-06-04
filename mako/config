@@ -21,7 +21,7 @@ history=1
 format= <b>%s</b>\n%b
 
 text-alignment=center
-default-timeout=3000
+default-timeout=5000
 ignore-timeout=0
 
 max-visible=1
