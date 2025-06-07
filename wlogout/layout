@@ -10,7 +10,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "doas zzz && hyprlock -q",
+    "action" : "hyprlock -q & doas zzz",
     "text" : "睡眠"
 }
 {
