@@ -1,4 +1,4 @@
 [mgr]
 prepend_keymap = [
-  { on = "<C-p>", run = "hardlink --force", desc = "hardlink yanked files overwriting" }
+  { on = "<C-p>", run = "hardlink --force", desc = "hardlink yanked files overwritely" }
 ]
