@@ -8,7 +8,7 @@ tun:
 sniffer:
   enable: false
 hosts:
-  'thirdeye.kosaka-chatgpt.eu.org': 103.21.244.31
+  'thirdeye.kosaka-chatgpt.eu.org': 198.41.221.59
 dns:
   enable: true
   cache-algorithm: arc
