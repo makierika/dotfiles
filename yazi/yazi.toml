@@ -9,3 +9,6 @@ rules = [
   { mime = 'image/*', use = 'view' },
   { mime = '{audio, video}/*', use = 'play' }
 ]
+
+[tasks]
+image_bound = [ 0, 0 ]
