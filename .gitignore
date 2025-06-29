@@ -1,7 +1,7 @@
-alist/data/data.db-shm
-alist/data/data.db-wal
-alist/data/log/
-alist/data/temp/
+openlist/data/data.db-shm
+openlist/data/data.db-wal
+openlist/data/log/
+openlist/data/temp/
 btop/btop.log
 btop/themes/
 dconf/
