@@ -3,7 +3,7 @@ exec --no-startup-id wireplumber
 exec --no-startup-id foot --server
 exec --no-startup-id waybar
 exec --no-startup-id fcitx5 -d -r
-#exec --no-startup-id swayidle
+exec --no-startup-id swayidle
 exec --no-startup-id autotiling
 
 set $super Mod4
