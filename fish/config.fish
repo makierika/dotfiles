@@ -11,12 +11,10 @@ alias ff=fastfetch
 alias lg=lazygit
 alias ls="eza --icons=always"
 alias tree="ls --tree"
-alias httpd="doas python -m http.server 80"
 alias syncthing="syncthing serve --no-upgrade --no-browser"
 alias qr="qrencode -t ansi"
 alias mpd="mpd >/dev/null 2>&1"
 alias ncmpcpp="ncmpcpp -q"
-alias mp3="mpv --no-video"
 alias tbw3="tbw 3"
 alias tldr="tldr -q"
 
