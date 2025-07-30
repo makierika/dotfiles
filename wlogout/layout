@@ -4,11 +4,6 @@
     "text" : "锁定"
 }
 {
-    "label" : "shutdown",
-    "action" : "doas poweroff",
-    "text" : "关机"
-}
-{
     "label" : "suspend",
     "action" : "hyprlock -q & doas zzz",
     "text" : "睡眠"
@@ -17,4 +12,9 @@
     "label" : "reboot",
     "action" : "doas reboot",
     "text" : "重启"
+}
+{
+    "label" : "shutdown",
+    "action" : "doas poweroff",
+    "text" : "关机"
 }
