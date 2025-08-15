@@ -69,7 +69,6 @@ scrcpy
 age
 termshark
 timeshift
-portal
 grim
 slurp
 ufw
@@ -77,9 +76,6 @@ tealdeer
 docker
 kdelive
 audacity
-heroic-games-launcher
-gamescope
-wine
 qemu-kvm
 rpcs3
 ventoy

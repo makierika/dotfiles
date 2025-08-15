@@ -5,16 +5,16 @@
 }
 {
     "label" : "suspend",
-    "action" : "hyprlock -q & doas zzz",
+    "action" : "loginctl suspend",
     "text" : "睡眠"
 }
 {
     "label" : "reboot",
-    "action" : "doas reboot",
+    "action" : "loginctl reboot",
     "text" : "重启"
 }
 {
     "label" : "shutdown",
-    "action" : "doas poweroff",
+    "action" : "loginctl poweroff",
     "text" : "关机"
 }

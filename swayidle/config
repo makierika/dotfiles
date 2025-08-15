@@ -1,2 +1,2 @@
+timeout 300 'hyprlock -q'
 timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
-timeout 900 'hyprlock'
