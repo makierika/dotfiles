@@ -5,16 +5,16 @@
 }
 {
     "label" : "suspend",
-    "action" : "loginctl suspend",
+    "action" : "do not suspend & fuck nvidia",
     "text" : "睡眠"
 }
 {
     "label" : "reboot",
-    "action" : "loginctl reboot",
+    "action" : "doas reboot",
     "text" : "重启"
 }
 {
     "label" : "shutdown",
-    "action" : "loginctl poweroff",
+    "action" : "doas poweroff",
     "text" : "关机"
 }

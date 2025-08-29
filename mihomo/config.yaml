@@ -8,7 +8,7 @@ tun:
 sniffer:
   enable: false
 hosts:
-  'thirdeye.kosaka-chatgpt.eu.org': 103.21.244.21
+  'thirdeye.kosaka-chatgpt.eu.org': 103.21.244.124
 dns:
   enable: true
   cache-algorithm: arc
@@ -95,5 +95,4 @@ rules:
   - DOMAIN-SUFFIX,startpage.com,airport
   - DOMAIN-SUFFIX,google.com,airport
   - DOMAIN-SUFFIX,chatgpt.com,airport
-  - DOMAIN-SUFFIX,gamer.com.tw,airport
   - MATCH,cloudflare
