@@ -6,11 +6,12 @@
 
 {
   "logo": {
-    "type": "sixel",
-    "source": "~/.config/fastfetch/logo.png",
+    "type": "raw",
+    "source": "~/.config/fastfetch/logo.sixel",
     "width": 19,
+    "height": 9,
     "padding": {
-      "top": 0,
+      "top": 1,
       "left": 0,
       "right": 2
     }
@@ -19,7 +20,7 @@
     "separator": " "
   },
   "modules": [
-	  "break",
+    "break",
     {
       "type": "os",
       "key": " ",
