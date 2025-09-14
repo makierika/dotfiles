@@ -1,13 +1,15 @@
 [opener]
 edit = [ { run = 'nvim "$@"', block = true, for = 'unix'} ]
 view = [ { run = 'imv-dir "$@"', for = 'unix' } ]
-play = [ { run = 'mpv "$@"', for = 'unix' } ]
+listen = [ { run = 'mpv --start=0 "$@"', for = 'unix' } ]
+play = [ { run = 'mpv --no-audio --start=0 "$@"', for = 'unix' } ]
 
 [open]
 rules = [
   { mime = 'text/*', use = 'edit' },
   { mime = 'image/*', use = 'view' },
-  { mime = '{audio, video}/*', use = 'play' }
+  { mime = 'audio/*', use = 'listen' },
+  { name = '*.{mp4,mkv}', use = 'play' }
 ]
 
 [tasks]
