@@ -8,7 +8,8 @@ tun:
 sniffer:
   enable: false
 hosts:
-  'thirdeye.kosaka-chatgpt.eu.org': 103.21.244.124
+  thirdeye.kosaka-chatgpt.eu.org: 103.21.244.124
+  fr2t.88888008.xyz: 172.67.140.218
 dns:
   enable: true
   cache-algorithm: arc
@@ -36,7 +37,7 @@ proxies:
     alterId: 0
     cipher: auto
     ws-opts:
-      path: '/fr2tgogofa'
+      path: /fr2tgogofa
       v2ray-http-upgrade: true
       headers:
         host: fr2t.88888008.xyz
@@ -51,7 +52,7 @@ proxies:
     sni: thirdeye.kosaka-chatgpt.eu.org
     client-fingerprint: chrome
     ws-opts:
-      path: '/?ed=2048'
+      path: /?ed=2048
       headers:
         host: thirdeye.kosaka-chatgpt.eu.org
 proxy-groups:
@@ -88,6 +89,7 @@ rules:
   - DOMAIN-SUFFIX,mpv.io,airport
   - DOMAIN-SUFFIX,fcdn.sk,airport
   - DOMAIN-SUFFIX,x.com,airport
+  - DOMAIN-SUFFIX,twitter.com,airport
   - DOMAIN-SUFFIX,1lib.sk,airport
   - DOMAIN-SUFFIX,apkpure.com,airport
   - DOMAIN-SUFFIX,ncdn.ec,airport

@@ -94,10 +94,12 @@
       },
       {
         "domain": [
-          "x.com"
+          "x.com",
+          "twimg.com"
         ],
         "domain_keyword": [
-          "twitter"
+          "twitter",
+          "cloudflare"
         ],
         "action": "route",
         "outbound": "v2free"
