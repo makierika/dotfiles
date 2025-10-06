@@ -8,7 +8,7 @@ tun:
 sniffer:
   enable: false
 hosts:
-  thirdeye.kosaka-chatgpt.eu.org: 103.21.244.124
+  thirdeye.kosaka-chatgpt.eu.org: 103.21.244.31
   fr2t.88888008.xyz: 172.67.140.218
 dns:
   enable: true
@@ -97,4 +97,10 @@ rules:
   - DOMAIN-SUFFIX,startpage.com,airport
   - DOMAIN-SUFFIX,google.com,airport
   - DOMAIN-SUFFIX,chatgpt.com,airport
+  - DOMAIN-SUFFIX,cachyos.org,airport
+  - DOMAIN-SUFFIX,githubassets.com,airport
+  - DOMAIN-SUFFIX,pinimg.com,airport
+  - DOMAIN-SUFFIX,apkcombo.com,airport
+  - DOMAIN-SUFFIX,winudf.com,airport
+  - DOMAIN-SUFFIX,androidcombo.com,airport
   - MATCH,cloudflare

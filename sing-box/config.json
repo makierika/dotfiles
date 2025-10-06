@@ -1,7 +1,7 @@
 {
   "log": {
-    "disabled": false,
-    "level": "warn"
+    "disabled": true,
+    "level": "debug"
   },
   "dns": {
     "servers": [
@@ -9,7 +9,7 @@
         "tag": "hosts",
         "type": "hosts",
         "predefined": {
-          "thirdeye.kosaka-chatgpt.eu.org": "103.21.244.21",
+          "thirdeye.kosaka-chatgpt.eu.org": "103.21.244.31",
           "fr2t.88888008.xyz": "172.67.140.218"
         }
       },
@@ -95,10 +95,11 @@
       {
         "domain": [
           "x.com",
-          "twimg.com"
+          "api.twitter.com",
+          "pbs.twimg.com",
+          "video.twimg.com"
         ],
         "domain_keyword": [
-          "twitter",
           "cloudflare"
         ],
         "action": "route",
@@ -113,7 +114,8 @@
       }
     ],
     "final": "cf",
-    "default_domain_resolver": "hosts",
+    "override_android_vpn": true,
+    "default_domain_resolver": "cf-dns",
     "auto_detect_interface": true
   },
   "ntp": {
