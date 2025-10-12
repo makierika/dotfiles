@@ -1,7 +1,7 @@
 [opener]
 edit = [ { run = 'nvim "$@"', block = true, for = 'unix'} ]
 view = [ { run = 'imv-dir "$@"', for = 'unix' } ]
-listen = [ { run = 'mpv --start=0 "$@"', for = 'unix' } ]
+listen = [ { run = 'mpv --no-video --start=0 "$@"', for = 'unix' } ]
 play = [ { run = 'mpv --no-audio --start=0 "$@"', for = 'unix' } ]
 
 [open]

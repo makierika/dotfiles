@@ -97,10 +97,12 @@
           "x.com",
           "api.twitter.com",
           "pbs.twimg.com",
+          "chatgpt.com",
           "video.twimg.com"
         ],
         "domain_keyword": [
-          "cloudflare"
+          "cloudflare",
+          "oaistatic"
         ],
         "action": "route",
         "outbound": "v2free"

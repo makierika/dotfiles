@@ -3,7 +3,6 @@ openlist/data/data.db-wal
 openlist/data/log/
 openlist/data/temp/
 btop/btop.log
-btop/themes/
 dconf/
 dinit.d/
 fcitx/
