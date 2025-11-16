@@ -36,7 +36,7 @@
   "bleve_dir": "data/bleve",
   "dist_dir": "",
   "log": {
-    "enable": true,
+    "enable": false,
     "name": "data/log/log.log",
     "max_size": 50,
     "max_backups": 30,
