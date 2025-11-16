@@ -9,7 +9,7 @@ sniffer:
   enable: false
 hosts:
   thirdeye.kosaka-chatgpt.eu.org: 103.21.244.124
-  fr2t.musktrump.top: 104.21.78.233
+  fr3.musktrump.top: 172.67.138.105
 dns:
   enable: true
   cache-algorithm: arc
@@ -29,7 +29,7 @@ global-client-fingerprint: chrome
 proxies:
   - name: v2free
     type: vmess
-    server: fr2t.musktrump.top
+    server: fr3.musktrump.top
     port: 80
     uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf
     network: ws
@@ -37,10 +37,10 @@ proxies:
     alterId: 0
     cipher: auto
     ws-opts:
-      path: /fr2tgogofa
+      path: /fr333gogofa
       v2ray-http-upgrade: true
       headers:
-        host: fr2t.musktrump.top
+        host: fr3.musktrump.top
   - name: cfvless
     type: vless
     server: thirdeye.kosaka-chatgpt.eu.org
@@ -103,4 +103,5 @@ rules:
   - DOMAIN-SUFFIX,winudf.com,airport
   - DOMAIN-SUFFIX,androidcombo.com,airport
   - DOMAIN-SUFFIX,claude.ai,airport
+  - DOMAIN-SUFFIX,v2free.cc,airport
   - MATCH,cloudflare

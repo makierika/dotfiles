@@ -10,7 +10,7 @@
         "type": "hosts",
         "predefined": {
           "thirdeye.kosaka-chatgpt.eu.org": "103.21.244.31",
-          "fr2t.musktrump.top": "104.21.78.233"
+          "fr3.musktrump.top": "172.67.138.105"
         }
       },
       {
@@ -24,7 +24,7 @@
       {
         "domain_keyword": [
           "kosaka-chatgpt",
-          "fr2t"
+          "musktrump"
         ],
         "action": "route",
         "server": "hosts" 
@@ -69,7 +69,7 @@
     {
       "tag": "v2free",
       "type": "vmess",
-      "server": "fr2t.musktrump.top",
+      "server": "fr3.musktrump.top",
       "server_port": 80,
       "uuid": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
       "security": "auto",
@@ -79,9 +79,9 @@
       },
       "transport": {
         "type": "httpupgrade",
-        "path": "/fr2tgogofa",
+        "path": "/fr333gogofa",
         "headers": {
-          "host": "fr2t.musktrump.top"
+          "host": "fr3.musktrump.top"
         }
       }
     }
