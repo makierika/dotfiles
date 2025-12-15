@@ -16,6 +16,7 @@ alias qr="qrencode -t ansi"
 alias mpd="mpd >/dev/null 2>&1"
 alias ncmpcpp="ncmpcpp -q"
 alias tldr="tldr -q"
+alias aa=aria2c
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
