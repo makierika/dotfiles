@@ -1,0 +1,7 @@
+name: moon
+version: "0.0.1"
+import_tables:
+  - dicts/char
+  - dicts/base
+  - dicts/ext
+...

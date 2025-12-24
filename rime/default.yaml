@@ -1,0 +1,49 @@
+config_version: '2025-12-21'
+
+schema_list:
+  - schema: moon
+  
+menu:
+  page_size: 4
+
+ascii_composer:
+  good_old_caps_lock: true
+  switch_key:
+    Caps_Lock: clear
+    Shift_L: commit_code
+    Shift_R: noop
+    Control_L: noop
+    Control_R: noop
+
+punctuator:
+  half_shape:
+    ',' : '，'
+    '.' : '。'
+    '<' : '《'
+    '>' : '》'
+    '?' : '？'
+    ';' : '；'
+    ':' : '：'
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : '、'
+    '|' : { commit: · }
+    '!' : '！'
+    '$' : '￥'
+    '^' : '……'
+    '&' : '＆'
+    '(' : '（'
+    ')' : '）'
+    '-' : '－'
+    '[' : '【'
+    ']' : '】'
+    '{' : '｛'
+    '}' : '｝'
+
+key_binder:
+  select_first_character: "bracketleft"
+  select_last_character: "bracketright"
+
+  bindings:
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
