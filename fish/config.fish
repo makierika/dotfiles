@@ -17,6 +17,7 @@ alias mpd="mpd >/dev/null 2>&1"
 alias ncmpcpp="ncmpcpp -q"
 alias tldr="tldr -q"
 alias aa=aria2c
+alias mpvg="mpv -vo=gpu-next"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
