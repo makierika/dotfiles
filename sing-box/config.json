@@ -9,8 +9,8 @@
         "tag": "hosts",
         "type": "hosts",
         "predefined": {
-          "thirdeye.kosaka-chatgpt.eu.org": "103.21.244.31",
-          "fr3.musktrump.top": "172.67.138.105"
+          "thirdeye.kosaka-chatgpt.eu.org": "104.19.63.166",
+          "us1t-1031.musktrump.top": "172.67.138.105"
         }
       },
       {
@@ -69,7 +69,7 @@
     {
       "tag": "v2free",
       "type": "vmess",
-      "server": "fr3.musktrump.top",
+      "server": "us1t-1031.musktrump.top",
       "server_port": 80,
       "uuid": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
       "security": "auto",
@@ -79,9 +79,9 @@
       },
       "transport": {
         "type": "httpupgrade",
-        "path": "/fr333gogofa",
+        "path": "/microsoft",
         "headers": {
-          "host": "fr3.musktrump.top"
+          "host": "us1t-1031.musktrump.top"
         }
       }
     }
