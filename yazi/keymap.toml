@@ -1,4 +1,5 @@
 [mgr]
 prepend_keymap = [
-  { on = "<C-p>", run = "hardlink --force", desc = "hardlink yanked files overwritely" }
+  { on = "<C-p>", run = "hardlink --force", desc = "hardlink yanked files overwritely" },
+  { on = "<C-f>", run = "shell -- dragon %h", desc = "drag and drop hovered file" }
 ]
