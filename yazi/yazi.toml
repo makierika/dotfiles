@@ -9,7 +9,7 @@ rules = [
   { mime = 'text/*', use = 'edit' },
   { mime = 'image/*', use = 'view' },
   { mime = 'audio/*', use = 'listen' },
-  { name = '*.{mp4,mkv}', use = 'play' }
+  { mime = 'video/*', use = 'play' }
 ]
 
 [tasks]
