@@ -1,5 +1,6 @@
 name: moon
 version: "0.0.1"
+use_preset_vocabulary: false
 import_tables:
   - dicts/char
   - dicts/word
