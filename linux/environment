@@ -1,0 +1,5 @@
+LLVM=1
+LLVM_IAS=1
+CC=clang
+XMODIFIERS=@im=fcitx
+QT_IM_MODULES="wayland;fcitx"

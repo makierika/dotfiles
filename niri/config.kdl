@@ -1,0 +1,108 @@
+input {
+  keyboard {
+    xkb {
+      layout "us"
+      options "caps:escape"
+    }
+  }
+  mod-key "Super"
+}
+output "DP-1" {
+  focus-at-startup
+  mode "2560x1440@59.951"
+  scale 1
+  transform "normal"
+  position x=0 y=0
+}
+binds {
+  Mod+Return { spawn "footclient"; }
+  Mod+Space { spawn "tofi-drun"; }
+  Mod+Tab repeat=false { toggle-overview; }
+  Mod+X repeat=false { close-window; }
+  XF86AudioRaiseVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "1%+"; }
+  XF86AudioLowerVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "1%-"; }
+  XF86AudioMute        { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+  Mod+H { focus-column-left; }
+  Mod+L { focus-column-right; }
+  Mod+J { focus-window-down; }
+  Mod+K { focus-window-up; }
+  Mod+Shift+H { move-column-left; }
+  Mod+Shift+L { move-column-right; }
+  Mod+Shift+J { move-window-down; }
+  Mod+Shift+K { move-window-up; }
+  Mod+Control+H { consume-or-expel-window-left; }
+  Mod+Control+L { consume-or-expel-window-right; }
+  Mod+R { switch-preset-column-width; }
+  Mod+Minus { set-column-width "-10%"; }
+  Mod+Equal { set-column-width "+10%"; }
+  Mod+Shift+Minus { set-window-height "-10%"; }
+  Mod+Shift+Equal { set-window-height "+10%"; }
+  Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+  Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
+  Mod+1 { focus-workspace 1; }
+  Mod+2 { focus-workspace 2; }
+  Mod+3 { focus-workspace 3; }
+  Mod+4 { focus-workspace 4; }
+  Mod+Shift+1 { move-column-to-workspace 1; }
+  Mod+Shift+2 { move-column-to-workspace 2; }
+  Mod+Shift+3 { move-column-to-workspace 3; }
+  Mod+Shift+4 { move-column-to-workspace 4; }
+  Mod+F { toggle-window-floating; }
+  Mod+Shift+P { power-off-monitors; }
+  Mod+Shift+Q { quit; }
+}
+layout {
+  gaps 5
+  center-focused-column "never"
+  always-center-single-column
+  preset-column-widths {
+    proportion 0.33333
+    proportion 0.5
+    proportion 0.66667
+    proportion 1.0
+  }
+  default-column-width { proportion 0.5; }
+  focus-ring {
+    off
+  }
+  border {
+    off
+  }
+  shadow {
+    off
+  }
+  tab-indicator {
+    off
+  }
+}
+spawn-at-startup "mako"
+spawn-at-startup "foot" "--server"
+spawn-at-startup "waybar"
+spawn-at-startup "fcitx5" "-d" "-r"
+spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/kosaka/Pictures/007gmkkdly1hrhq3lnjctj31jk0v9tsv.jpg"
+hotkey-overlay {
+  skip-at-startup
+}
+prefer-no-csd
+cursor {
+  xcursor-theme "Bibata-Original-Classic"
+  xcursor-size 24
+  hide-when-typing
+}
+gestures {
+  hot-corners {
+    off
+  }
+}
+window-rule {
+  geometry-corner-radius 7
+  clip-to-geometry true
+}
+window-rule {
+  match app-id="librewolf"
+  default-column-width { proportion 1.0; }
+}
+window-rule {
+  match app-id="mpv"
+  open-fullscreen true
+}

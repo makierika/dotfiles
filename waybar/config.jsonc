@@ -1,7 +1,7 @@
 {
   "height": 36,
   "spacing": 7,
-  "modules-left": [ "custom/holder", "sway/workspaces" ],
+  "modules-left": [ "custom/holder", "niri/workspaces" ],
   "modules-center": [ "clock" ],
   "modules-right": [
     "custom/icon",
@@ -11,6 +11,16 @@
     "custom/holder",
     "custom/wlogout"
   ],
+  "niri/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "1 ",
+      "2": "2 ",
+      "3": "3 ",
+      "4": "4 "
+    }
+  },
   "sway/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
