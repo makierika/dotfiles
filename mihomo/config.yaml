@@ -8,8 +8,8 @@ tun:
 sniffer:
   enable: false
 hosts:
-  thirdeye.kosaka-chatgpt.eu.org: 104.19.63.166
-  fr3.musktrump.top: 172.67.138.105
+  thirdeye.kosaka-chatgpt.eu.org: 104.16.10.150
+  gttus1t.18838006.xyz: 140.99.255.109
 dns:
   enable: true
   cache-algorithm: arc
@@ -27,20 +27,19 @@ tcp-concurrent: true
 unified-delay: false
 proxies:
   - name: v2free
-    type: vmess
-    server: fr3.musktrump.top
-    port: 80
-    uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf
-    network: ws
-    tls: false
-    alterId: 0
-    cipher: auto
+    type: anytls
+    server: gttus1t.18838006.xyz
+    port: 443
+    password: ae3ee41e-e274-3252-88f2-3bc434b830cf
     client-fingerprint: chrome
-    ws-opts:
-      path: /fr333gogofa
-      v2ray-http-upgrade: true
-      headers:
-        host: fr3.musktrump.top
+    udp: true
+    min-idle-session: 0
+    sni: inapps.appsflyersdk.com
+    alpn:
+      - http/1.1
+      - h2
+      - h3
+    skip-cert-verify: true
   - name: cfvless
     type: vless
     server: thirdeye.kosaka-chatgpt.eu.org

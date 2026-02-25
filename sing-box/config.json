@@ -9,8 +9,8 @@
         "tag": "hosts",
         "type": "hosts",
         "predefined": {
-          "thirdeye.kosaka-chatgpt.eu.org": "104.19.63.166",
-          "us1t-1031.musktrump.top": "172.67.138.105"
+          "thirdeye.kosaka-chatgpt.eu.org": "104.16.10.150",
+          "gttus1t.18838006.xyz": "140.99.255.109"
         }
       },
       {
@@ -68,20 +68,25 @@
     },
     {
       "tag": "v2free",
-      "type": "vmess",
-      "server": "us1t-1031.musktrump.top",
-      "server_port": 80,
-      "uuid": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "anytls",
+      "server": "gttus1t.18838006.xyz",
+      "server_port": 443,
+      "password": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
+      "min_idle_session": 0,
       "tls": {
-        "enabled": false
-      },
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/microsoft",
-        "headers": {
-          "host": "us1t-1031.musktrump.top"
+        "enabled": true,
+        "server_name": "inapps.appsflyersdk.com",
+        "insecure": true,
+        "alpn": [
+          "http/1.1",
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": false
         }
       }
     }
