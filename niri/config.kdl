@@ -9,13 +9,13 @@ input {
 }
 output "DP-1" {
   focus-at-startup
-  mode "2560x1440@59.951"
+  mode "2560x1440@59.991"
   scale 1
   transform "normal"
   position x=0 y=0
 }
 binds {
-  Mod+Return { spawn "footclient"; }
+  Mod+Return { spawn "kitty" "--single-instance"; }
   Mod+Space { spawn "tofi-drun"; }
   Mod+Tab repeat=false { toggle-overview; }
   Mod+X repeat=false { close-window; }
@@ -39,6 +39,8 @@ binds {
   Mod+Shift+Equal { set-window-height "+10%"; }
   Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
   Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
+  Alt+J { focus-workspace-down; }
+  Alt+K { focus-workspace-up; }
   Mod+1 { focus-workspace 1; }
   Mod+2 { focus-workspace 2; }
   Mod+3 { focus-workspace 3; }
@@ -76,7 +78,7 @@ layout {
   }
 }
 spawn-at-startup "mako"
-spawn-at-startup "foot" "--server"
+// spawn-at-startup "foot" "--server"
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5" "-d" "-r"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/kosaka/Pictures/007gmkkdly1hrhq3lnjctj31jk0v9tsv.jpg"
