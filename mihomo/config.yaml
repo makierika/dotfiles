@@ -97,7 +97,6 @@ rules:
   - DOMAIN-SUFFIX,google.com,airport
   - DOMAIN-SUFFIX,cachyos.org,airport
   - DOMAIN-SUFFIX,githubassets.com,airport
-  - DOMAIN-SUFFIX,pinimg.com,airport
   - DOMAIN-SUFFIX,apkcombo.com,airport
   - DOMAIN-SUFFIX,winudf.com,airport
   - DOMAIN-SUFFIX,androidcombo.com,airport
