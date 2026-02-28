@@ -9,7 +9,7 @@ input {
 }
 output "DP-1" {
   focus-at-startup
-  mode "2560x1440@59.991"
+  mode "2560x1440@59.951"
   scale 1
   transform "normal"
   position x=0 y=0
@@ -76,6 +76,11 @@ layout {
   tab-indicator {
     off
   }
+}
+environment {
+  LLVM     "1"
+  LLVM_IAS "1"
+  CC       "clang"
 }
 spawn-at-startup "mako"
 // spawn-at-startup "foot" "--server"
