@@ -5,7 +5,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "do not suspend & fuck nvidia",
+    "action" : "doas zzz",
     "text" : "睡眠"
 }
 {

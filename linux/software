@@ -12,14 +12,14 @@ efibootmgr
 doas
 sysklogd
 wev
-sway
+niri
 swaybg
 swayidle
 mako
 libnotify
 pipewire
 wireplumber
-foot
+kitty
 starship
 fish
 neovim
@@ -28,9 +28,8 @@ wf-recorder
 waybar
 hyprlock
 tofi
-autotiling-rs
 btop
-iotop
+iotop-c
 nvtop
 eza
 zoxide
@@ -91,3 +90,5 @@ noto-fonts
 telegram
 imagemagick
 inxi
+proton
+umu-launcher

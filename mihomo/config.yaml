@@ -1,5 +1,5 @@
 log-level: silent
-mixed-port: 7892
+socks-port: 7892
 ipv6: false
 allow-lan: false
 geodata-mode: false
