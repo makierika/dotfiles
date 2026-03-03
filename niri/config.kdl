@@ -76,7 +76,6 @@ environment {
 }
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
-spawn-at-startup "swayidle"
 spawn-at-startup "fcitx5" "-d" "-r"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/kosaka/Pictures/wallpaper.jpg"
 hotkey-overlay {
