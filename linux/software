@@ -1,12 +1,13 @@
 gentoo
 dinit
 clang
-rust
 llvm
+rust
+go
 seatd
 dbus
 dracut
-amd/intel-microcode
+intel-microcode
 polkit-gnome
 efibootmgr
 doas

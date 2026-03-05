@@ -26,8 +26,8 @@ binds {
   Mod+L { focus-column-right; }
   Mod+J { focus-workspace-down; }
   Mod+K { focus-workspace-up; }
-  Alt+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
-  Alt+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
+  Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+  Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
   Mod+Minus { set-column-width "-10%"; }
   Mod+Equal { set-column-width "+10%"; }
   Mod+R { switch-preset-column-width; }
@@ -73,6 +73,8 @@ environment {
   LLVM     "1"
   LLVM_IAS "1"
   CC       "clang"
+  GOPATH   "/home/kosaka/.go"
+  GOPROXY  "https://goproxy.io/"
 }
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
