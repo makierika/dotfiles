@@ -18,6 +18,7 @@ alias ncmpcpp="ncmpcpp -q"
 alias tldr="tldr -q"
 alias aa=aria2c
 alias mpvg="mpv -vo=gpu-next"
+alias mpvl="mpv -vd-lavc-skipframe=nonref"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")

@@ -44,7 +44,9 @@ binds {
   Mod+F { toggle-window-floating; }
   Mod+Shift+P { power-off-monitors; }
   Mod+Shift+Q { quit; }
+  Print { screenshot show-pointer=false; }
 }
+screenshot-path "~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
 layout {
   gaps 5
   center-focused-column "never"
@@ -75,6 +77,7 @@ environment {
   CC       "clang"
   GOPATH   "/home/kosaka/.go"
   GOPROXY  "https://goproxy.io/"
+  GOAMD64  "v3"
 }
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
