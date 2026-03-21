@@ -1,0 +1,31 @@
+{
+  "listen": "7890",
+  "simple": {
+    "server": "thisrdkn4ever.eu.org",
+    "dns": "198.41.209.48"
+  },
+  "anytls": {
+    "dns": "140.99.255.109",
+    "port": "443",
+    "password": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
+    "sni": "inapps.appsflyersdk.com",
+    "skip-verify": true,
+    "alpn": [
+      "http/1.1",
+      "h2"
+    ]
+  },
+  "rule": [
+    "startpage.com",
+    "x.com",
+    "twitter.com",
+    "openai.com",
+    "chatgpt.com",
+    "oaistatic.com",
+    "v2ex.com",
+    "npdn.top",
+    "gitlab.com",
+    "1lib.sk",
+    "cloudflare.com"
+  ]
+}
