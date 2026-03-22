@@ -8,7 +8,7 @@ tun:
 sniffer:
   enable: false
 hosts:
-  thirdeye.kosaka-chatgpt.eu.org: 104.16.10.150
+  thirdeye.kosaka-chatgpt.eu.org: 198.41.209.48
   gttus1t.18838006.xyz: 140.99.255.109
 dns:
   enable: true
@@ -38,7 +38,6 @@ proxies:
     alpn:
       - http/1.1
       - h2
-      - h3
     skip-cert-verify: true
   - name: cfvless
     type: vless
@@ -94,7 +93,6 @@ rules:
   - DOMAIN-SUFFIX,ncdn.ec,airport
   - DOMAIN-SUFFIX,cloudflare.com,airport
   - DOMAIN-SUFFIX,startpage.com,airport
-  - DOMAIN-SUFFIX,google.com,airport
   - DOMAIN-SUFFIX,cachyos.org,airport
   - DOMAIN-SUFFIX,githubassets.com,airport
   - DOMAIN-SUFFIX,apkcombo.com,airport

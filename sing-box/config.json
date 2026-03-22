@@ -9,7 +9,7 @@
         "tag": "hosts",
         "type": "hosts",
         "predefined": {
-          "thirdeye.kosaka-chatgpt.eu.org": "104.16.10.150",
+          "thirdeye.kosaka-chatgpt.eu.org": "198.41.209.48",
           "gttus1t.18838006.xyz": "140.99.255.109"
         }
       },
