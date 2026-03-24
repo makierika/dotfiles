@@ -19,8 +19,8 @@ binds {
   Mod+Space { spawn "tofi-drun"; }
   Mod+Tab repeat=false { toggle-overview; }
   Mod+X repeat=false { close-window; }
-  XF86AudioRaiseVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "1%+"; }
-  XF86AudioLowerVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "1%-"; }
+  XF86AudioRaiseVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
+  XF86AudioLowerVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
   XF86AudioMute        { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
   Mod+H { focus-column-left; }
   Mod+L { focus-column-right; }
@@ -78,6 +78,7 @@ environment {
   GOPATH   "/home/kosaka/.go"
   GOPROXY  "https://goproxy.io/"
   GOAMD64  "v3"
+  GTK_CSD  "0"
 }
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
