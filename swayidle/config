@@ -1,2 +1,0 @@
-timeout 300 'hyprlock -q'
-timeout 600 'niri msg output DP-1 off' resume 'niri msg output DP-1 on'
