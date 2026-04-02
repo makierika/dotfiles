@@ -2,7 +2,7 @@ input {
   keyboard {
     xkb {
       layout "us"
-      options "caps:escape"
+      options "caps:swapescape"
     }
   }
   mod-key "Super"
@@ -108,5 +108,6 @@ window-rule {
 }
 window-rule {
   match app-id="mpv"
+  match title="^Media viewer$"
   open-fullscreen true
 }
