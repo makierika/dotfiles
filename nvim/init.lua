@@ -22,6 +22,15 @@ vim.opt.smartcase = true
 
 vim.opt.scrolloff = 10
 
+-- Spell Check
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"cpp", "c", "h", "go"},
+    callback = function()
+        vim.opt_local.spell = true
+        vim.opt_local.spelllang = "en_us"
+    end
+})
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -70,6 +79,16 @@ local plugins = {
     config = true
   },
   {'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons'},
+  {
+    'nvim-tree/nvim-tree.lua',
+    version = '*',
+    lazy = false,
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    config = function()
+      require("nvim-tree").setup {}
+    end,
+  },
+  { 'nvim-mini/mini.diff', version = '*' },
   {
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
@@ -167,3 +186,15 @@ vim.keymap.set('n', '<leader>e', ':ene<CR>')
 vim.keymap.set('n', '<leader>q', ':qa<CR>')
 
 require('ibl').setup()
+
+require('mini.diff').setup({
+  view = {
+    style = 'sign',
+    signs = {
+      add = '+',
+      change = '~',
+      delete = '-'
+    },
+    priority = 199,
+  }
+})
