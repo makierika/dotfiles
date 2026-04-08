@@ -6,12 +6,12 @@ bind \cj history-prefix-search-forward
 bind \ck history-prefix-search-backward
 
 alias v=nvim
+alias vv="v ."
 alias c=clear
 alias ff=fastfetch
 alias lg=lazygit
 alias ls="eza --icons=always"
 alias tree="ls --tree"
-alias syncthing="syncthing serve --no-upgrade --no-browser"
 alias qr="qrencode -t ansi"
 alias mpd="mpd >/dev/null 2>&1"
 alias ncmpcpp="ncmpcpp -q"

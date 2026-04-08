@@ -2,7 +2,7 @@
   "listen": "7890",
   "simple": {
     "server": "thisrdkn4ever.eu.org",
-    "dns": "198.41.209.48"
+    "dns": "198.41.199.194"
   },
   "anytls": {
     "dns": "140.99.255.109",
@@ -17,6 +17,7 @@
   },
   "rule": [
     "startpage.com",
+    "sagernet.org",
     "x.com",
     "twitter.com",
     "openai.com",
