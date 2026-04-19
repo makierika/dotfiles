@@ -15,6 +15,7 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.scrolloff = 10
+vim.opt.signcolumn = 'yes:2'
 
 require('config.spellcheck')
 require('config.highlight')
