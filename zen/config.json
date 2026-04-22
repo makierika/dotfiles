@@ -2,7 +2,7 @@
   "listen": "7890",
   "simple": {
     "server": "thisrdkn4ever.eu.org",
-    "dns": "198.41.199.194"
+    "dns": "104.21.81.13"
   },
   "anytls": {
     "dns": "140.99.255.109",
@@ -27,6 +27,8 @@
     "npdn.top",
     "gitlab.com",
     "1lib.sk",
-    "cloudflare.com"
+    "cloudflare.com",
+    "jrkan.com",
+    "leijing.xyz"
   ]
 }
