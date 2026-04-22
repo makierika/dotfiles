@@ -1,5 +1,7 @@
 vim.lsp.enable("clang")
 
+vim.lsp.set_log_level("off")
+
 vim.diagnostic.config({
   signs = {
     text = {
