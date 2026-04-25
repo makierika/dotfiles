@@ -38,9 +38,10 @@
   "inbounds": [
     {
       "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
       "address": "198.18.0.1/16",
-      "auto_route": true,
-      "sniff": true
+      "auto_route": true
     }
   ],
   "outbounds": [
@@ -93,6 +94,11 @@
   ],
   "route": {
     "rules": [
+      {
+        "inbound": "tun-in",
+        "action": "sniff",
+        "timeout": "1s"
+      },
       {
         "protocol": "dns",
         "action": "hijack-dns"
