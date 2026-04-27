@@ -7,6 +7,7 @@ bind \ck history-prefix-search-backward
 
 alias v=nvim
 alias vv="v ."
+alias vf="v ~/.local/share/fish/fish_history"
 alias c=clear
 alias ff=fastfetch
 alias lg=lazygit

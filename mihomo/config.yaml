@@ -1,5 +1,6 @@
 log-level: silent
 socks-port: 7892
+port: 7890
 ipv6: false
 allow-lan: false
 geodata-mode: false
@@ -8,7 +9,7 @@ tun:
 sniffer:
   enable: false
 hosts:
-  thirdeye.kosaka-chatgpt.eu.org: 104.21.81.13
+  thisrdkn4ever.eu.org: 104.21.81.13
   gttus1t.18838006.xyz: 140.99.255.109
 dns:
   enable: true
@@ -33,7 +34,7 @@ proxies:
     password: ae3ee41e-e274-3252-88f2-3bc434b830cf
     client-fingerprint: chrome
     udp: true
-    min-idle-session: 0
+    min-idle-session: 1
     sni: inapps.appsflyersdk.com
     alpn:
       - http/1.1
@@ -41,18 +42,18 @@ proxies:
     skip-cert-verify: true
   - name: cfvless
     type: vless
-    server: thirdeye.kosaka-chatgpt.eu.org
+    server: thisrdkn4ever.eu.org
     port: 443
     uuid: 17ecefc4-d24c-4192-b6e4-f8335ee03c8b
     network: ws
     tls: true
     udp: false
-    sni: thirdeye.kosaka-chatgpt.eu.org
+    sni: thisrdkn4ever.eu.org
     client-fingerprint: chrome
     ws-opts:
       path: /?ed=2048
       headers:
-        host: thirdeye.kosaka-chatgpt.eu.org
+        host: thisrdkn4ever.eu.org
 proxy-groups:
   - name: cloudflare
     type: select
