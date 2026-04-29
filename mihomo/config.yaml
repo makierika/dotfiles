@@ -14,11 +14,13 @@ hosts:
 dns:
   enable: true
   cache-algorithm: arc
+  use-hosts: true
   respect-rules: false
   ipv6: false
   default-nameserver:
     - tls://1.1.1.1
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   direct-nameserver:
     - 192.168.2.1
 profile:
@@ -37,8 +39,8 @@ proxies:
     min-idle-session: 1
     sni: inapps.appsflyersdk.com
     alpn:
-      - http/1.1
       - h2
+      - http/1.1
     skip-cert-verify: true
   - name: cfvless
     type: vless
