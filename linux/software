@@ -62,7 +62,7 @@ rime
 aria2
 wget
 godot
-syncthing
+localsend
 rsync
 xdg-desktop-portal-wlr
 obs
@@ -73,8 +73,6 @@ termshark
 dysk
 cowsay
 timeshift
-grim
-slurp
 ufw
 tealdeer
 chrony
@@ -84,9 +82,7 @@ audacity
 qemu-kvm
 rpcs3
 ventoy
-qrencode
 tmux
-brename
 noto-fonts
 telegram
 imagemagick
