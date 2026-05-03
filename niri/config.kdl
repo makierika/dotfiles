@@ -69,6 +69,7 @@ environment {
   LLVM     "1"
   LLVM_IAS "1"
   CC       "clang"
+  CXX      "clang++"
   GOPATH   "/home/kosaka/.go"
   GOPROXY  "https://goproxy.io/"
   GOAMD64  "v3"
@@ -97,7 +98,7 @@ window-rule {
   clip-to-geometry true
 }
 window-rule {
-  match app-id="librewolf"
+  match title="LibreWolf"
   default-column-width { proportion 1.0; }
 }
 window-rule {

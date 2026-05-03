@@ -9,7 +9,7 @@ tun:
 sniffer:
   enable: false
 hosts:
-  thisrdkn4ever.eu.org: 104.21.81.13
+  thisrdkn4ever.eu.org: 104.19.48.224
   gttus1t.18838006.xyz: 140.99.255.109
 dns:
   enable: true
