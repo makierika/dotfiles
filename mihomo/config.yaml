@@ -9,8 +9,8 @@ tun:
 sniffer:
   enable: false
 hosts:
-  thisrdkn4ever.eu.org: 104.19.48.224
-  gttus1t.18838006.xyz: 140.99.255.109
+  thisrdkn4ever.eu.org: 104.20.48.52
+  gttus2t.18838006.xyz: 51.81.220.202
 dns:
   enable: true
   cache-algorithm: arc
@@ -31,7 +31,7 @@ unified-delay: false
 proxies:
   - name: v2free
     type: anytls
-    server: gttus1t.18838006.xyz
+    server: gttus2t.18838006.xyz
     port: 443
     password: ae3ee41e-e274-3252-88f2-3bc434b830cf
     client-fingerprint: chrome
@@ -103,4 +103,6 @@ rules:
   - DOMAIN-SUFFIX,androidcombo.com,airport
   - DOMAIN-SUFFIX,claude.ai,airport
   - DOMAIN-SUFFIX,v2free.cc,airport
+  - DOMAIN-SUFFIX,jrkan.com,airport
+  - DOMAIN-SUFFIX,leijing.xyz,airport
   - MATCH,cloudflare

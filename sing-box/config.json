@@ -9,7 +9,7 @@
         "tag": "hosts",
         "type": "hosts",
         "predefined": {
-          "thirdeye.kosaka-chatgpt.eu.org": "104.21.81.13",
+          "thisrdkn4ever.eu.org": "104.20.48.52",
           "gttus1t.18838006.xyz": "140.99.255.109"
         }
       },
@@ -48,12 +48,12 @@
     {
       "tag": "cf",
       "type": "vless",
-      "server": "thirdeye.kosaka-chatgpt.eu.org",
+      "server": "thisrdkn4ever.eu.org",
       "server_port": 443,
       "uuid": "17ecefc4-d24c-4192-b6e4-f8335ee03c8b",
       "tls": {
         "enabled": true,
-        "server_name": "thirdeye.kosaka-chatgpt.eu.org",
+        "server_name": "thisrdkn4ever.eu.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -63,7 +63,7 @@
         "type": "ws",
         "path": "/?ed=2048",
         "headers": {
-          "host": "thirdeye.kosaka-chatgpt.eu.org"
+          "host": "thisrdkn4ever.eu.org"
         }
       }
     },
