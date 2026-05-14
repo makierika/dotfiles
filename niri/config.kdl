@@ -74,6 +74,15 @@ environment {
   GOPROXY  "https://goproxy.io/"
   GOAMD64  "v3"
   GTK_CSD  "0"
+
+  ANTHROPIC_BASE_URL             "https://api.deepseek.com/anthropic"
+  ANTHROPIC_AUTH_TOKEN           "sk-24bfeabc2fa14932ade8363c540b2e3d"
+  ANTHROPIC_MODEL                "deepseek-v4-pro"
+  ANTHROPIC_DEFAULT_OPUS_MODEL   "deepseek-v4-pro[1m]"
+  ANTHROPIC_DEFAULT_SONNET_MODEL "deepseek-v4-pro"
+  ANTHROPIC_DEFAULT_HAIKU_MODEL  "deepseek-v4-flash"
+  CLAUDE_CODE_SUBAGENT_MODEL     "deepseek-v4-flash"
+  CLAUDE_CODE_EFFORT_LEVEL       "max"
 }
 spawn-at-startup "mako"
 spawn-at-startup "/home/kosaka/.local/bin/waybar"
