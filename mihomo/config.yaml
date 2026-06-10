@@ -10,7 +10,7 @@ sniffer:
   enable: false
 hosts:
   thisrdkn4ever.eu.org: 104.20.48.52
-  gttus2t.18838006.xyz: 51.81.220.202
+  gttus3t.18838006.xyz: 104.21.54.198
 dns:
   enable: true
   cache-algorithm: arc
@@ -30,18 +30,22 @@ tcp-concurrent: true
 unified-delay: false
 proxies:
   - name: v2free
-    type: anytls
-    server: gttus2t.18838006.xyz
+    type: vless
+    server: gttus3t.18838006.xyz
     port: 443
-    password: ae3ee41e-e274-3252-88f2-3bc434b830cf
-    client-fingerprint: chrome
+    uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf
     udp: true
-    min-idle-session: 1
-    sni: inapps.appsflyersdk.com
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
+    encryption: mlkem768x25519plus.xorpub.0rtt.1hQwBKYmwWWC9RhVRfAwNE6LMy7czfBp6sgSAbSpK0M
+    flow: xtls-rprx-vision
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /us3sdk
+      headers:
+        Host: gttus3t.18838006.xyz
+      v2ray-http-upgrade: true
   - name: cfvless
     type: vless
     server: thisrdkn4ever.eu.org
@@ -95,14 +99,11 @@ rules:
   - DOMAIN-SUFFIX,apkpure.com,airport
   - DOMAIN-SUFFIX,ncdn.ec,airport
   - DOMAIN-SUFFIX,cloudflare.com,airport
-  - DOMAIN-SUFFIX,startpage.com,airport
   - DOMAIN-SUFFIX,cachyos.org,airport
-  - DOMAIN-SUFFIX,githubassets.com,airport
   - DOMAIN-SUFFIX,apkcombo.com,airport
   - DOMAIN-SUFFIX,winudf.com,airport
   - DOMAIN-SUFFIX,androidcombo.com,airport
   - DOMAIN-SUFFIX,claude.ai,airport
   - DOMAIN-SUFFIX,v2free.cc,airport
   - DOMAIN-SUFFIX,jrkan.com,airport
-  - DOMAIN-SUFFIX,leijing.xyz,airport
   - MATCH,cloudflare
