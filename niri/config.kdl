@@ -111,6 +111,10 @@ window-rule {
   default-column-width { proportion 1.0; }
 }
 window-rule {
+  match app-id="scrcpy"
+  default-column-width { proportion 0.33333; }
+}
+window-rule {
   match app-id="mpv"
   match title="^Media viewer$"
   open-fullscreen true
