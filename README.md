@@ -1,2 +1,2 @@
 # dotfiles
-My personal linux sway dotfiles
+My personal linux niri dotfiles

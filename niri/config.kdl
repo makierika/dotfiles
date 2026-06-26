@@ -86,7 +86,7 @@ environment {
 }
 spawn-at-startup "mako"
 spawn-at-startup "/home/kosaka/.local/bin/waybar"
-spawn-at-startup "fcitx5" "-rd"
+spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/kosaka/Pictures/wallpaper.jpg"
 hotkey-overlay {
   skip-at-startup
