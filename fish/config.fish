@@ -19,6 +19,7 @@ alias tldr="tldr -q"
 alias aa=aria2c
 alias mpvg="mpv -vo=gpu-next"
 alias mpvl="mpv -vd-lavc-skipframe=nonref"
+alias pactree1="pactree -r -d 1"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
