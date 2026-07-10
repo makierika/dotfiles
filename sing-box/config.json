@@ -6,11 +6,10 @@
   "dns": {
     "servers": [
       {
-        "tag": "hosts",
+        "tag": "local-dns",
         "type": "hosts",
         "predefined": {
-          "thisrdkn4ever.eu.org": "104.20.48.52",
-          "gttus1t.18838006.xyz": "140.99.255.109"
+          "thisrdkn4ever.eu.org": "104.20.48.52"
         }
       },
       {
@@ -23,11 +22,10 @@
     "rules": [
       {
         "domain_keyword": [
-          "kosaka-chatgpt",
-          "musktrump"
+          "thisrdkn4ever"
         ],
         "action": "route",
-        "server": "hosts" 
+        "server": "local-dns"
       }
     ],
     "final": "cf-dns",
@@ -66,30 +64,6 @@
           "host": "thisrdkn4ever.eu.org"
         }
       }
-    },
-    {
-      "tag": "v2free",
-      "type": "anytls",
-      "server": "gttus1t.18838006.xyz",
-      "server_port": 443,
-      "password": "ae3ee41e-e274-3252-88f2-3bc434b830cf",
-      "min_idle_session": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "inapps.appsflyersdk.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1",
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": false
-        }
-      }
     }
   ],
   "route": {
@@ -102,21 +76,6 @@
       {
         "protocol": "dns",
         "action": "hijack-dns"
-      },
-      {
-        "domain": [
-          "x.com",
-          "api.twitter.com",
-          "pbs.twimg.com",
-          "chatgpt.com",
-          "video.twimg.com"
-        ],
-        "domain_keyword": [
-          "cloudflare",
-          "oaistatic"
-        ],
-        "action": "route",
-        "outbound": "v2free"
       },
       {
         "domain_keyword": [
