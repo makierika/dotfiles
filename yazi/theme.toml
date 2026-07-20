@@ -1,2 +1,6 @@
 [flavor]
 dark = "kanagawa-dragon"
+[icon]
+append_globs = [
+	{ url = "*.conf", text = "" },
+]
