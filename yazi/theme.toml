@@ -4,3 +4,6 @@ dark = "kanagawa-dragon"
 append_globs = [
 	{ url = "*.conf", text = "" },
 ]
+append_dirs = [
+  { name = "Develop", text = "", fg = "#42a5f5" },
+]
