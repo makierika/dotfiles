@@ -7,7 +7,6 @@ window {
   font-family: monospace;
   font-size: 16pt;
   color: #cdd6f4;
-	/*background-color: rgba(17, 17, 27, 0.8);*/
   background-image: image(url("./icons/background.jpg"));
   background-size: cover;
 }
@@ -26,21 +25,21 @@ button {
 }
 
 button:hover {
-  background-color: rgba(24, 33, 46, 0.6);
+  background-color: rgba(24, 33, 46, 0.3);
 }
 
 #lock {
-    background-image: image(url("./icons/lock.svg"));
+  background-image: image(url("./icons/lock.svg"));
 }
 
 #suspend {
-    background-image: image(url("./icons/moon.svg"));
+  background-image: image(url("./icons/moon.svg"));
 }
 
 #shutdown {
-    background-image: image(url("./icons/power.svg"));
+  background-image: image(url("./icons/power.svg"));
 }
 
 #reboot {
-    background-image: image(url("./icons/reboot.svg"));
+  background-image: image(url("./icons/reboot.svg"));
 }
