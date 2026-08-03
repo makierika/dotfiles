@@ -33,7 +33,7 @@ button:hover {
 }
 
 #suspend {
-  background-image: image(url("./icons/moon.svg"));
+  background-image: image(url("./icons/sleep.svg"));
 }
 
 #shutdown {

@@ -1,6 +1,5 @@
 set fish_greeting
 
-bind \cf accept-autosuggestion
 bind \cy accept-autosuggestion execute
 bind \cj history-prefix-search-forward
 bind \ck history-prefix-search-backward
