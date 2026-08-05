@@ -68,15 +68,17 @@ layout {
   }
 }
 environment {
-  LLVM     "1"
-  LLVM_IAS "1"
-  CC       "clang"
-  CXX      "clang++"
-  CFLAGS   "-march=native -O2 -flto=thin -fno-semantic-interposition"
-  GOPATH   "/home/kosaka/.go"
-  GOPROXY  "https://goproxy.io/"
-  GOAMD64  "v3"
-  GTK_CSD  "0"
+  LLVM          "1"
+  LLVM_IAS      "1"
+  CC            "clang"
+  CXX           "clang++"
+  CFLAGS        "-march=native -O2 -flto=thin -fno-semantic-interposition"
+  XMODIFIERS    "@im=fcitx"
+  QT_IM_MODULES "wayland;fcitx"
+  GOPATH        "/home/kosaka/.go"
+  GOPROXY       "https://goproxy.io/"
+  GOAMD64       "v3"
+  GTK_CSD       "0"
 
   ANTHROPIC_BASE_URL             "https://api.deepseek.com/anthropic"
   ANTHROPIC_AUTH_TOKEN           "sk-24bfeabc2fa14932ade8363c540b2e3d"
