@@ -1,1 +1,1 @@
-root=/dev/sda4 initrd=\EFI\linux\initramfs.img quiet fastboot delayacct libata.noacpi=1 intel_pstate=passive amdgpu.dc=1
+root=/dev/sda4 initrd=\EFI\linux\initramfs.img quiet fastboot delayacct libata.noacpi=1 amdgpu.dc=0

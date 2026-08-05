@@ -19,13 +19,13 @@ button {
   color: #ced7f4;
   text-shadow: none;
   border-radius: 20px 20px 20px 20px;
-  background-color: rgba(49, 50, 68, 0.3);
+  background-color: rgba(49, 50, 68, 0.4);
   margin: 30px;
-  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: rgba(24, 33, 46, 0.3);
+  background-color: rgba(24, 33, 46, 0.4);
 }
 
 #lock {
