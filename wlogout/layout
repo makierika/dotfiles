@@ -5,7 +5,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "doas zzz",
+    "action" : "zzz",
     "text" : "睡眠"
 }
 {

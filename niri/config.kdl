@@ -40,7 +40,7 @@ binds {
   Mod+Shift+Q { quit; }
   Print { screenshot show-pointer=false; }
   Home { spawn "/home/kosaka/.local/bin/pickcolor"; }
-  Mod+Control+L { spawn "hyprlock" "-q"; }
+  Mod+Control+L { spawn "/home/kosaka/.local/bin/lockc"; }
 }
 screenshot-path "~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
 layout {
