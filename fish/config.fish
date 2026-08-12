@@ -19,6 +19,8 @@ alias aa=aria2c
 alias mpvg="mpv -vo=gpu-next"
 alias mpvl="mpv -vd-lavc-skipframe=nonref"
 alias pactree1="pactree -r -d 1"
+alias ager="age -r age1u3frz9qq9am9ahwk3k5v297kaqp29ua6ypg9ekf6xnepxn7etqfq5kmtaj"
+alias aged="age -d -i /home/kosaka/Encryption/pass.key"
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")

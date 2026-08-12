@@ -5,7 +5,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "zzz",
+    "action" : "/home/kosaka/.local/bin/zzz",
     "text" : "睡眠"
 }
 {
