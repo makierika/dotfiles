@@ -36,7 +36,7 @@ binds {
   Mod+Shift+L { move-column-right; }
   Mod+Shift+J { move-column-to-workspace-down; }
   Mod+Shift+K { move-column-to-workspace-up; }
-  Mod+Shift+F { toggle-windowed-fullscreen; }
+  Mod+F { toggle-windowed-fullscreen; }
   Mod+Shift+P { power-off-monitors; }
   Mod+Shift+Q { quit; }
   Print { screenshot show-pointer=false; }
