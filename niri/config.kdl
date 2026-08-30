@@ -29,8 +29,8 @@ binds {
   Mod+K { focus-workspace-up; }
   Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
   Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
-  Mod+Minus { set-column-width "-10%"; }
-  Mod+Equal { set-column-width "+10%"; }
+  Mod+Minus { set-column-width "-5%"; }
+  Mod+Equal { set-column-width "+5%"; }
   Mod+R { switch-preset-column-width; }
   Mod+Shift+H { move-column-left; }
   Mod+Shift+L { move-column-right; }
