@@ -29,48 +29,48 @@
     {
       "type": "os",
       "key": " ",
-      "keyColor": "35"
+      "keyColor": "#647ba8"
     },
     {
       "type": "kernel",
       "key": " ",
-      "keyColor": "35"
+      "keyColor": "#647ba8"
     },
     {
       "type": "packages",
       "format": "{} (pacman)",
       "key": " ",
-      "keyColor": "35"  
+      "keyColor": "#647ba8"
     },
     {
       "type": "shell",
       "key": " ",
-      "keyColor": "35" 
+      "keyColor": "#647ba8"
     },
     {
       "type": "terminal",
       "key": " ",
-      "keyColor": "35" 
+      "keyColor": "#647ba8"
     },
     {
       "type": "wm",
       "key": " ",
-      "keyColor": "35" 
+      "keyColor": "#647ba8"
     },
     {
       "type": "uptime",
       "key": " ",
-      "keyColor": "35" 
+      "keyColor": "#647ba8"
     },
     {
       "type": "memory",
       "key": " ",
-      "keyColor": "35" 
+      "keyColor": "#647ba8"
     },
     {
       "type": "disk",
       "key": " ",
-      "keyColor": "35" 
+      "keyColor": "#647ba8"
     },
     "break"
   ]
