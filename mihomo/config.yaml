@@ -35,17 +35,14 @@ proxies:
     port: 443
     uuid: ae3ee41e-e274-3252-88f2-3bc434b830cf
     udp: true
-    encryption: mlkem768x25519plus.xorpub.0rtt.1hQwBKYmwWWC9RhVRfAwNE6LMy7czfBp6sgSAbSpK0M
+    encryption: mlkem768x25519plus.xorpub.0rtt.IMdQy59E87n5mh3bRWM-o_VA7syeLn8V1aRZh8fkYj0
     flow: xtls-rprx-vision
     tls: true
     skip-cert-verify: false
     client-fingerprint: chrome
-    network: ws
-    ws-opts:
+    network: xhttp
+    xhttp-opts:
       path: /us3sdk
-      headers:
-        Host: gttus3t.18838006.xyz
-      v2ray-http-upgrade: true
   - name: cfvless
     type: vless
     server: thisrdkn4ever.eu.org
