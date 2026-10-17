@@ -1,45 +1,44 @@
 {
   "log": {
-    "disabled": true,
-    "level": "debug"
+    "disabled": true
   },
   "dns": {
     "servers": [
       {
-        "tag": "local-dns",
+        "tag": "hosts",
         "type": "hosts",
         "predefined": {
           "thisrdkn4ever.eu.org": "104.20.48.52"
         }
       },
       {
-        "tag": "cf-dns",
-        "type": "tls",
-        "server": "1.1.1.1",
-        "server_port": 853
+        "tag": "remote",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.1/16",
+        "inet6_range": "fc00::/18"
       }
     ],
     "rules": [
       {
-        "domain_keyword": [
-          "thisrdkn4ever"
-        ],
+        "preferred_by": "hosts",
         "action": "route",
-        "server": "local-dns"
+        "server": "hosts"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "remote"
       }
-    ],
-    "final": "cf-dns",
-    "disable_cache": false,
-    "disable_expire": false,
-    "independent_cache": false
+    ]
   },
   "inbounds": [
     {
       "type": "tun",
-      "tag": "tun-in",
-      "interface_name": "tun0",
-      "address": "198.18.0.1/16",
-      "auto_route": true
+      "address": ["172.19.0.1/30","fdfe:dcba:9876::1/126"],
+      "auto_route": true,
+      "strict_route": true
     }
   ],
   "outbounds": [
@@ -49,6 +48,7 @@
       "server": "thisrdkn4ever.eu.org",
       "server_port": 443,
       "uuid": "17ecefc4-d24c-4192-b6e4-f8335ee03c8b",
+      "network": "tcp",
       "tls": {
         "enabled": true,
         "server_name": "thisrdkn4ever.eu.org",
@@ -69,9 +69,7 @@
   "route": {
     "rules": [
       {
-        "inbound": "tun-in",
-        "action": "sniff",
-        "timeout": "1s"
+        "action": "sniff"
       },
       {
         "protocol": "dns",
@@ -86,8 +84,7 @@
       }
     ],
     "final": "cf",
-    "override_android_vpn": true,
-    "default_domain_resolver": "cf-dns",
+    "default_domain_resolver": "hosts",
     "auto_detect_interface": true
   },
   "ntp": {
@@ -95,7 +92,9 @@
   },
   "experimental": {
     "cache_file": {
-      "enabled": true
+      "enabled": true,
+      "store_fakeip": true,
+      "store_dns": true
     }
   }
 }
