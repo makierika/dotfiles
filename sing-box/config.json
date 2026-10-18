@@ -25,10 +25,7 @@
         "server": "local"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
+        "query_type": ["A"],
         "server": "remote"
       }
     ]
@@ -36,7 +33,7 @@
   "inbounds": [
     {
       "type": "tun",
-      "address": "172.19.0.1/30",
+      "address": ["172.19.0.1/30"],
       "auto_route": true,
       "strict_route": true
     }
