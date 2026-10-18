@@ -43,7 +43,7 @@
   ],
   "outbounds": [
     {
-      "tag": "cfvless",
+      "tag": "cloudflare",
       "type": "vless",
       "server": "thisrdkn4ever.eu.org",
       "server_port": 443,
@@ -83,7 +83,7 @@
         "action": "reject"
       }
     ],
-    "final": "cfvless",
+    "final": "cloudflare",
     "default_domain_resolver": "local",
     "auto_detect_interface": true
   },
