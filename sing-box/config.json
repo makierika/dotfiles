@@ -3,6 +3,7 @@
     "disabled": true
   },
   "dns": {
+    "strategy": "ipv4_only",
     "servers": [
       {
         "tag": "hosts",
@@ -14,8 +15,7 @@
       {
         "tag": "remote",
         "type": "fakeip",
-        "inet4_range": "198.18.0.1/16",
-        "inet6_range": "fc00::/18"
+        "inet4_range": "198.18.0.1/16"
       }
     ],
     "rules": [
@@ -36,7 +36,7 @@
   "inbounds": [
     {
       "type": "tun",
-      "address": ["172.19.0.1/30","fdfe:dcba:9876::1/126"],
+      "address": "172.19.0.1/30",
       "auto_route": true,
       "strict_route": true
     }
