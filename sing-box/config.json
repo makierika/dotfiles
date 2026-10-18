@@ -6,7 +6,7 @@
     "strategy": "ipv4_only",
     "servers": [
       {
-        "tag": "hosts",
+        "tag": "local",
         "type": "hosts",
         "predefined": {
           "thisrdkn4ever.eu.org": "104.20.48.52"
@@ -20,9 +20,9 @@
     ],
     "rules": [
       {
-        "preferred_by": "hosts",
+        "preferred_by": "local",
         "action": "route",
-        "server": "hosts"
+        "server": "local"
       },
       {
         "query_type": [
@@ -43,7 +43,7 @@
   ],
   "outbounds": [
     {
-      "tag": "cf",
+      "tag": "cfvless",
       "type": "vless",
       "server": "thisrdkn4ever.eu.org",
       "server_port": 443,
@@ -83,8 +83,8 @@
         "action": "reject"
       }
     ],
-    "final": "cf",
-    "default_domain_resolver": "hosts",
+    "final": "cfvless",
+    "default_domain_resolver": "local",
     "auto_detect_interface": true
   },
   "ntp": {
