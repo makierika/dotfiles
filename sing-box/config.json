@@ -6,7 +6,7 @@
     "strategy": "ipv4_only",
     "servers": [
       {
-        "tag": "local",
+        "tag": "hosts",
         "type": "hosts",
         "predefined": {
           "thisrdkn4ever.eu.org": "104.20.48.52"
@@ -20,9 +20,9 @@
     ],
     "rules": [
       {
-        "preferred_by": "local",
+        "preferred_by": "hosts",
         "action": "route",
-        "server": "local"
+        "server": "hosts"
       },
       {
         "query_type": ["A"],
@@ -81,7 +81,7 @@
       }
     ],
     "final": "cloudflare",
-    "default_domain_resolver": "local",
+    "default_domain_resolver": "hosts",
     "auto_detect_interface": true
   },
   "ntp": {
