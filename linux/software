@@ -65,6 +65,7 @@ localsend
 rsync
 xdg-desktop-portal-wlr
 obs
+atk-tool
 android-tools
 scrcpy
 age
