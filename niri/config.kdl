@@ -140,6 +140,7 @@ window-rule {
 }
 layer-rule {
   match namespace="waybar"
+  match namespace="notifications"
   background-effect {
     blur true
     xray false
