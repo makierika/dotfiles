@@ -52,6 +52,6 @@
     "tooltip": false,
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "format": "{volume}%",
-    "format-muted": "muted"
+    "format-muted": "mute"
   }
 }

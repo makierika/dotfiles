@@ -98,6 +98,5 @@ rules:
   - DOMAIN-SUFFIX,apkcombo.com,airport
   - DOMAIN-SUFFIX,winudf.com,airport
   - DOMAIN-SUFFIX,androidcombo.com,airport
-  - DOMAIN-SUFFIX,startpage.com,airport
   - DOMAIN-SUFFIX,cloudflare.com,airport
   - MATCH,cloudflare
